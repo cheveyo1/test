@@ -3,7 +3,6 @@ liqingzhu123
 liqiangai111
 liqiang888
 liqiang123
-liqiangai111
 liping666
 lipeibo123
 linan123
@@ -15,7 +14,6 @@ liliu666
 lilin123
 lilian888
 lilili123
-lilian888
 lili123
 lilang123
 likui123
@@ -194,31 +192,13 @@ lian666
 liang12345
 liang666
 liang888888
-libin123
-libing888
-libo123
-libo888
-lichao666
-lifei123
-lihao123
-lihao666
 lihua666
-lijia123
-lijie123
-lijing666
-lijun123
-likai123
-lili123
-lilin123
-lilong123
 lily123	
 lim111	
 liming1234
 lin111
-lin111
 lin123
 lin666
-lina123
 liping666	
 liqiang123	
 liqiang888	
@@ -451,7 +431,6 @@ zhang1234
 zhangx123	
 zhangxu888	
 zhao123	
-zhao123	
 zhao123123	
 zhao12345	
 zheng12345	
@@ -480,8 +459,7 @@ zxz123
 liaoxu123	
 liaoqiang888	
 liaocheng123	
-liao666	200	
-liao123	200	
+liao666	
+liao123	
 lianxing123	
-lian666	200	
-liaiai123	
+liaiai123
