@@ -20,8 +20,6 @@ liyuke123
 liyuwei123
 liyuxin666
 liyuyang123
-liyuan123
-liyuan888
 liyueteng666
 liyuetong123
 lize123
@@ -59,12 +57,10 @@ wanghui123
 wangji123
 wangjian123
 wangjia123
-wangjian123
 wangjie321
 wangjie111
 wangjie666
 wangjing123
-wangjuan123
 wangjuan123
 wangjun123
 wangjun111
@@ -107,7 +103,6 @@ wangwei888
 wangwen123
 wangxiao123
 wangxixi123
-wangxiao123
 wangxinzhe111
 wangxu123
 wangxueyan123
@@ -115,7 +110,6 @@ wangyanan123
 wangyan123
 wangyan666
 wangyan888
-wangyanan123
 wangyibo123
 wangyu123
 wangyubao123
@@ -606,4 +600,3 @@ liaocheng123
 liao666	
 liao123	
 lianxing123	
-liaiai123
