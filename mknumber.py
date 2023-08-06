@@ -17,8 +17,9 @@ def writeData(dataStr,nowtime):
 	FileW.write(dataStr+ '\n')
 	FileW.close()
 
-def mkData(dataLines,dataFormat,limitNumber,nowtime):
-
+def mkData(dataLines,dataFormat,limitNumber,linestr,nowtime):
+	if ':' in linestr:
+	    lineL=linestr.split(":")
 	if dataFormat=='NameNumS' or dataFormat=='NameNumL':
 		if dataFormat=='NameNumS':
 			numList=['123','321','111','666','888']
@@ -27,19 +28,17 @@ def mkData(dataLines,dataFormat,limitNumber,nowtime):
 		try:
 			count=0
 			for datastr in dataLines:
-
 				for num in numList:
-		
 					if limitNumber!=0 and count<limitNumber:
 					
 						data=datastr.replace('\n','')+num.replace('\n','')
-						
-						writeData(data,nowtime)
+						if len(data)<int(lineL[1]) and len(data)>int(lineL[0]):
+							writeData(data,nowtime)
 					elif limitNumber==0:
 					
 						data=datastr.replace('\n','')+num.replace('\n','')
-				
-						writeData(data,nowtime)
+						if len(data)<int(lineL[1]) and len(data)>int(lineL[0]):
+							writeData(data,nowtime)
 					count=count+1
 					data=''
 					
@@ -62,7 +61,8 @@ if __name__ == '__main__':
 	parser.add_option('-i', dest='InputFile', type='string', help='输入元数据文件')
 
 	parser.add_option('-f', dest='FormatData', type ='string', help='数据格式')
-	parser.add_option('-l', dest='Lines',  default=0,type ='int', help='输出xx条数据')
+	parser.add_option('-m', dest='Max',  default=0,type ='int', help='最多输出xx条数据')
+	parser.add_option('-l', dest='Lines', type ='string', help='输出数据最小长度和最大长度')
 	
 	
 	
@@ -71,16 +71,17 @@ if __name__ == '__main__':
 	
 	InputFile = options.InputFile
 	FormatData = options.FormatData
+	Max = options.Max
 	Lines = options.Lines
 	
 
 	if InputFile!='' and FormatData!='':
 		
 		InputData = open(InputFile, mode='r', buffering=-1, encoding=None)
-		print(Lines)
+		print(Max)
 		nowtime = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
 		print('数据文件：'+str(nowtime)+'_data'+'.dic')
-		mkData(InputData,FormatData,Lines,nowtime)
+		mkData(InputData,FormatData,Max,Lines,nowtime)
 
 
 			
