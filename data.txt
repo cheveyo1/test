@@ -1,0 +1,36 @@
+GET /api/v1/forms/newusercheck?phone=9804715298 HTTP/2
+Host: www.spartanpoker.com
+Cookie: XSRF-TOKEN=eyJpdiI6IkQxcFQwL3FFNnVZUlBUMC94Q2tSamc9PSIsInZhbHVlIjoiZm9rSEhZTmtYSjArSU1QOG9lcDMvZlZ2eTg1dW1ZTEp3YURxT0tLZ05taEtFeUtRNGo4aWtqTm1aWnkwRjVaV2d2c0FTTU5PcUhXQXB6clJ0aHdHZnN1UFRGV0N4R2dGTG01VHNvdTNRaHFwT3JoR0hQZS9NQzBIWXNFbU5nUUQyQ1F6VllrbjNwRTlJUmo1elR2VFhTL2ZrV1dBS1RVd2xJZFkxMWQzNnZDUWVUQ1ZGVFRvZFlEUDhwMEQ1Wlo2ZW5jYUNHWVg1YkVyeVF2WjB4eHFmaUxMblVRN3Zpa2xkdXZtVnpEK2x0QVZ2NjYvVk5zMDZpSU1yTzcwZkpRZnd6aFUrUlgrUFBId2RPbVJ0ZW1LemdwZE0rRThwbmZwSWd3bStUMGhJc0FXQlRBaVNrY1BkQ0wxNWFLdStncWs4THNIZitUNndNSGNnY1BoWGR4TFZXdC83ai91ejk3MFJtN3E0bWVUVU9HWUt0djBrQ2lUSm1IVzkvT0xmY2RQVXh2RDFOZDdJZStGVURJQVR1Qjk4L3d1WElOL1ZGckpZbi9sU3I2U1BMOTBsdHV2YW9HWDI0WUR3dlI0VDBYRnBRVy9GTGVtbkhrbGZXWnlyc2dtUnl3MFNiL0F0SmNnbkVKaXJUUUZnbzhXMjhBR3Baa0pCWVNmZE14aTJjeGoiLCJtYWMiOiJlODU1NmUwOWNlNGE3ODhlOGY2ZDJjNTE5YTI3Y2ZkMmU5ZTBmZmRmYjRmMTRhODYzNDQwNGNmMmZjY2NhYzJkIiwidGFnIjoiIn0%3D; footprints=eyJpdiI6IlJNS1IySENwbm5sc2c0OExZbncxanc9PSIsInZhbHVlIjoiZFgycXNNVmNOV2NISTJjODVhSytFQUZ6S1lNOWxxUmFXU2FKTWF5c2MvaTQvRmFSa2NBS1E2T0dEVGhSNnJQaXpPVmNvQTlUZlFUaVovZXJ1TEp0MHQ5Y3dOQ3lnV21keGdqZEpBeG1pN2k5MVM1OGhwNnNTdUExS0krMnQ0SVE4ZW8wMk9lamdhTWxLZ0c3d09RQmNOS2ZTMmtDT1MzYWlmNGpnLzE3b1o1VnhxWHNRMGVndUhNTDRaNXowdVhJQzZZSTFSRUVyMllBdU9yNE1WRGttZ3FDZ25LSDlyZWVjRTlCUVYwRTZJM1RaMCtycURQc05Xam1RdE1CMlJXaHBwdGtzY09ZT0l4VW92eWtxbjZ0a0hqcWh3TUlTS05sdUVJTVhIeS9hTDFVa0hEWmZKdXA3OFlLSjhLSDhNUXNSaEtzVGgrL0lYbVp4TmhPSHZnZWx5dFYvTTc3d1NuaG1RaXYzQWFjRnR4aW5SeEpLTWxlR3BxY3V2QVlsUERSeWlSSHRmeU1zUTBuM0V6bGZ5RWRaczd1SlVxUndJZWV2Vk14d3k5SEZhMG5VMEVQTFlEd3pqQmYvejFGMmt6dFFsU3NNWlhqdU5UbE9teEJJV2w1MllyL2JZMTRhWGREbzZ5WkpBaHcwWG1TcG5Ub3hHZWEveFRlV2FUcEdtdXEiLCJtYWMiOiJhMWQ5NmQ2NzAzN2Q2ZWQ2MDM2M2RiMGQ4YjU2NzQzY2U1YzRjZjRjN2M5MWVlY2U5ZDRlYTNhY2MxYjBlODkxIiwidGFnIjoiIn0%3D; spartan_session=cHEPj58xLsTKLmTpzgbxkhvT75WUczsXbXICDkqn
+Accept: application/json, text/javascript, */*; q=0.01
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+X-Requested-With: XMLHttpRequest
+Sec-Gpc: 1
+Accept-Language: zh-CN,zh;q=0.6
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.spartanpoker.com/
+Accept-Encoding: gzip, deflate
+Connection: close
+
+
+
+POST /api/mobileExists HTTP/2
+Host: leagues247-api-backend-7kxuneewna-el.a.run.app
+Content-Length: 23
+Sec-Ch-Ua: "Not/A)Brand";v="99", "Brave";v="115", "Chromium";v="115"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "macOS"
+Sec-Gpc: 1
+Accept-Language: zh-CN,zh;q=0.8
+Origin: https://www.leagues247.com
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.leagues247.com/
+Accept-Encoding: gzip, deflate
+
+{"mobile":"§9190221022§"}
