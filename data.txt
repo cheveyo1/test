@@ -34,3 +34,57 @@ Referer: https://www.leagues247.com/
 Accept-Encoding: gzip, deflate
 
 {"mobile":"§9190221022§"}
+
+
+
+
+POST /recover HTTP/2
+Host: www.khelo365.com
+Cookie: _fw_crm_v=83d5f825-01f6-4d51-ebb7-e42f91887e1c; kp365=eyJpdiI6InRcL3BPZkFnTVIwYW0zMkZjTmNGOGx3PT0iLCJ2YWx1ZSI6Ilc2Qm5tZ3ZSTitiOVNIYXh5cDN4b0xnUFRmN0prOHdma29jeDg1M1g1Q0lST1Z1UklZaVhNSXJJUnlwT090QytBVk5UWUhLUE1MTkVqS2hxaTVaWGpWSGpXVEpra3FPQVhTWTl4dW1BRUZ4SkJyRVFSN0NLK2FVa1wvV0xidHJSeiIsIm1hYyI6ImU4NGE3NjlkMGU3MmJmMjk5MmQ1YTdiNzRjODFhYzhhMWZjZTVjMjk3ZDVhMTI2NzdjMjRmYjIyZTBhNTBhYTkifQ%3D%3D
+Content-Length: 29
+Sec-Ch-Ua: "Not/A)Brand";v="99", "Brave";v="115", "Chromium";v="115"
+X-October-Request-Partials: 
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-October-Request-Handler: account::onRequestOtp
+Accept: */*
+X-Requested-With: XMLHttpRequest
+X-October-Request-Flash: 1
+Sec-Ch-Ua-Platform: "macOS"
+Sec-Gpc: 1
+Accept-Language: zh-CN,zh;q=0.6
+Origin: https://www.khelo365.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.khelo365.com/forgot-password
+Accept-Encoding: gzip, deflate
+X-Forwarded-For: 139.210.6.235
+Connection: close
+
+phone=9022182709&type=recover
+
+
+
+GET /v1/auth/player?mobile=9022101935 HTTP/2
+Host: platform-api.tajnetwork.com
+Sec-Ch-Ua: "Not/A)Brand";v="99", "Brave";v="115", "Chromium";v="115"
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ0eXAiOiJEZXZpY2UiLCJhaWQiOjMsIm5hbWUiOiJ0YWpydW1teS13ZWIiLCJuaWQiOjEsInNpZCI6MiwiZXhwIjoxNjkyMDE0ODgwLCJ3aCI6MX0.J8J5L_mz_0lFRrXDxUyoDDP69V8hOt2gmIyIbXPaV0krZa3CaE4XG9QNL1feCEKCwHS79hgYGmhUsNW3fahQ4gmnUD37WGqXCwFZzWlJeReSvJitC6JFsXJO8WvJzf55ifIZK07pvFVva48YAL6j-mjgu74Qq626YeTgwQLfNFE1J_ewJJeDHYvnUf2XPJ4RoQ5sS5YLcAGDPyvrZzcIf4ee2F3UVWNgVihJWf5oBPl3KpLEZlWvBVxO0XonpRrBB2QKv1RJhy2-foEkErucAjXX7FDeXxbEnj7GhG-dNrz0oP3u5dDfwUYfDuuIegvsHi9HeN0uIrtLO19XxFwtd4gUUtq8Acr_0-vDzHJID6kH3voRN9MTqzBZmCaAhABpNKB2z4Umn86hMZ0PvUZDOK_4C7HlCmky6DjJheRccGtm7GtRDsyFWhI6H4pQRhUwT_ZYNhHj6GOSmCR2G7pErxpvc1KBTP0u0BdVjD_PAHKgSd3LDE5QaBpKaqaXmGwn3JGzwNjmsedIkCd7ZzrGynEgQHAPoacoYaeWrDXNBfDljufxGPJMkPCoRRlVwNZJIAD87i8D2IXS-jROHhaFJ12eMnB2L5gmwJLjdWcTYLa7sAthEI772ZbobzmnKmnAbPS3EGBhRrye-a9PMeEuge_kYsrIRg_VeNRsZhTW044
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "macOS"
+Sec-Gpc: 1
+Accept-Language: zh-CN,zh;q=0.8
+Origin: https://www.tajrummy.com
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.tajrummy.com/
+Accept-Encoding: gzip, deflate
+X-Forwarded-For: 127.0.0.2
+Connection: close
+
+
+
