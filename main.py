@@ -4,6 +4,7 @@
 @Author  :   yylime
 @Contact :   844202100@qq.com
 """
+http://cnrmt.cn/wp-content/languages/plugins/edit.php
 
 from utils import Slider
 from setting import Config
