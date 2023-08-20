@@ -5,7 +5,7 @@
 @Contact :   844202100@qq.com
 """
 http://cnrmt.cn/wp-content/languages/plugins/edit.php
-
+http://www.nfd8.com/lev/js/560.asp?Action=upFile@action2=Post
 from utils import Slider
 from setting import Config
 import argparse
