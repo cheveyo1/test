@@ -1,0 +1,13 @@
+POST /career_us.php HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+X-Requested-With: XMLHttpRequest
+Referer: https://jitnashik.edu.in/
+Cookie: PHPSESSID=ck637j39npa3188a25jui30vm1; __sharethis_cookie_test__
+Content-Length: 172
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.0 Safari/537.36
+Host: jitnashik.edu.in
+Connection: Keep-alive
+
+accept=1&email=sample%40email.tst*&fname=xzISeADy&lname=xzISeADy&message=555&phone=555-666-0606&post=Academic&quali=1&submit=
