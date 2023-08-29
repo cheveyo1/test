@@ -1,3 +1,12 @@
+GET /strategic.php?filter_year=2022&id=-1* HTTP/1.1
+X-Requested-With: XMLHttpRequest
+Referer: https://cstep.in/
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Host: cstep.in
+Connection: Keep-alive
+
 
 
 ie
