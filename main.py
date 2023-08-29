@@ -11,6 +11,15 @@ pms/EmpSRFile/
 pms/GPF/
 pms/GPFEntry/
 
+Database: u903684843_msso
+Table: admin_login
+[1 entry]
++---------------+---------+---------------------+---------+--------+----------------------------------+
+| AdminId       | Roll_id | Email               | Name    | Type   | Password                         |
++---------------+---------+---------------------+---------+--------+----------------------------------+
+| 60b516ac383f7 | 1       | mssoindia@gmail.com | Rishabh | Admin  | 53ea99e4bfeaacfd58501da8711252c0 |
+
+
 """
 # -*- encoding: utf-8 -*-
 @Time    :   2021/12/23 12:45:18
