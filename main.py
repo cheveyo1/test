@@ -1,3 +1,16 @@
+
+
+ie
+bin
+images
+fonts
+script
+pms
+pms/EduDocFile/
+pms/EmpSRFile/
+pms/GPF/
+pms/GPFEntry/
+
 """
 # -*- encoding: utf-8 -*-
 @Time    :   2021/12/23 12:45:18
