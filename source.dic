@@ -16,6 +16,20 @@ Jvt0B5uZIDPJ5pbCqMo12CqD7pdnMSEd
 [zip-backup-files] [http] [medium] https://jkbocw.gov.in/website.zip [FILENAME="website",EXT="zip"]
 [zip-backup-files] [http] [medium] https://nicf.gov.in/nicf.zip [FILENAME="nicf",EXT="zip"]
 
+[mysql-native-password] [tcp] [info] jaipursez.gov.in:3306
+[mysql-native-password] [tcp] [info] mahadgm.gov.in:3306
+[mysql-native-password] [tcp] [info] moradabadsez.gov.in:3306
+[mysql-native-password] [tcp] [info] nagpurrailwaypolice.gov.in:3306
+[mysql-native-password] [tcp] [info] nsez.gov.in:3306
+[mysql-native-password] [tcp] [info] pcmcindia.gov.in:3306
+[mysql-native-password] [tcp] [info] rcsmanipur.gov.in:3306
+[mysql-native-password] [tcp] [info] saubhagya.gov.in:3306
+[mysql-native-password] [tcp] [info] sczcc.gov.in:3306
+[mysql-native-password] [tcp] [info] sugamsanchar.gov.in:3306
+[mysql-native-password] [tcp] [info] tbboard.gov.in:3306
+[mysql-native-password] [tcp] [info] wbmsmet.gov.in:3306
+[mysql-native-password] [tcp] [info] zpparbhani.gov.in:3306
+
 
 http://94.183.144.143:7001/
 http://103.18.20.137:9001
