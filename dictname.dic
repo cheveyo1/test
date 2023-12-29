@@ -1,3 +1,9 @@
+http://www.chabadabada.eu
+
+s:8:\"username\";s:23:\"commande@chabadabada.eu\";s:8:\"password\";s:11:\"FactAdmin00\";s:10:\"deactivate\";s:0:\
+SET PASSWORD FOR \'jeffrey\'@\'localhost\' = PASSWORD(\'mypass\');\n\n  
+keyword PASSWORD:\n\nCREATE USER \'jeffrey\'@\'localhost\'\nIDENTIFIED BY PASSWORD \'*90E462C37378CED12064BB3388827D2BA3A9B689\
+
 wang123
 wang321
 wang111
