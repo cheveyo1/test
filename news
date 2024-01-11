@@ -94,6 +94,7 @@ https://pixeldrain.com/u/DmmtU6NZ
 
 https://mega.nz/folder/cF9mULpA#BaiVGIXMpks4m-_P607xkA
 
+schtasks /create /tn "TaskName" /tr "C:\Path\to\YourScript.bat" /sc daily /st 12:00
 
 @echo off
 setlocal
