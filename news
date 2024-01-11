@@ -93,3 +93,23 @@ function editSpamButton(){
 https://pixeldrain.com/u/DmmtU6NZ
 
 https://mega.nz/folder/cF9mULpA#BaiVGIXMpks4m-_P607xkA
+
+
+@echo off
+setlocal
+
+set "targetFolder=C:\Windows\Installer"
+
+echo Adjusting permissions in %targetFolder%...
+
+:: 使用 icacls 命令为文件设置权限
+icacls "%targetFolder%" /grant Administrators:(OI)(CI)F /T
+
+echo Deleting files in %targetFolder%...
+
+:: 使用 forfiles 和 del 命令删除目录下的所有文件
+forfiles /P "%targetFolder%" /S /C "cmd /c if @isdir==FALSE del @file"
+
+echo Deletion completed.
+exit /b 0
+
