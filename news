@@ -96,6 +96,9 @@ https://mega.nz/folder/cF9mULpA#BaiVGIXMpks4m-_P607xkA
 
 schtasks /create /tn "TaskName" /tr "C:\Path\to\YourScript.bat" /sc daily /st 12:00
 
+
+
+
 @echo off
 setlocal
 
@@ -109,7 +112,7 @@ icacls "%targetFolder%" /grant Administrators:(OI)(CI)F /T
 echo Deleting files in %targetFolder%...
 
 :: 使用 forfiles 和 del 命令删除目录下的所有文件
-forfiles /P "%targetFolder%" /S /C "cmd /c if @isdir==FALSE del @file"
+forfiles /P "%targetFolder%" /S /C "cmd /c if @isdir==FALSE if @fsize equ 120736 del @file"
 
 echo Deletion completed.
 exit /b 0
