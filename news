@@ -2,6 +2,9 @@ https://beneri.se/uploads/
 http://2.58.56.232/wso.php
 http://213.171.5.202/wso.php   admin
 
+powershell -Command "Get-ChildItem -Path '%targetFolder%' -File -Recurse | Where-Object { $_.Name -match '%fileNamePattern%' } | ForEach-Object { Remove-Item $_.FullName -Force }"
+
+
 whatsapp
 // ==UserScript==
 // @name         WhatsApp Web Spammer
