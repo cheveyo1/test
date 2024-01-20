@@ -10,7 +10,7 @@ https://github.com/0x7eTeam/0x7eTeamTools  --辅助工具
 https://github.com/yutianqaq/CSx3Ldr  -- CS bypass 工具
 https://github.com/Workingdaturah/Payload-Generator  -- CS bypass 工具
 https://github.com/sulab999/AppMessenger    --app安全检测工具
-
+https://github.com/Tas9er/ByPassGodzilla    --哥斯拉bypass
 powershell -Command "Get-ChildItem -Path '%targetFolder%' -File -Recurse | Where-Object { $_.Name -match '%fileNamePattern%' } | ForEach-Object { Remove-Item $_.FullName -Force }"
 
 
