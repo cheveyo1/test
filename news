@@ -2,6 +2,15 @@ https://beneri.se/uploads/
 http://2.58.56.232/wso.php
 http://213.171.5.202/wso.php   admin
 
+https://github.com/liamg/traitor   --linux 提权
+https://github.com/WKL-Sec/HiddenDesktop    -- Windows隐藏
+https://github.com/Pik-sec/God     --集成 afrog nuclei vulmap pocbomber xray 
+https://github.com/Zhao-sai-sai/Online_tools/tree/master?tab=readme-ov-file    --渗透工具组合
+https://github.com/0x7eTeam/0x7eTeamTools  --辅助工具
+https://github.com/yutianqaq/CSx3Ldr  -- CS bypass 工具
+https://github.com/Workingdaturah/Payload-Generator  -- CS bypass 工具
+https://github.com/sulab999/AppMessenger    --app安全检测工具
+
 powershell -Command "Get-ChildItem -Path '%targetFolder%' -File -Recurse | Where-Object { $_.Name -match '%fileNamePattern%' } | ForEach-Object { Remove-Item $_.FullName -Force }"
 
 
