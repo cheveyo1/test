@@ -1,0 +1,45 @@
+from telegram import Bot
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, CallbackContext
+import time
+from datetime import datetime
+
+# 在 https://t.me/botfather 处获得你的机器人令牌
+TOKEN = "YourBotToken"
+
+# 创建机器人实例
+bot = Bot(token=TOKEN)
+
+def send_periodic_message(context: CallbackContext):
+    # 判断是否在白天10-20点之间
+    now = datetime.now()
+    if now.hour >= 10 and now.hour < 20:
+        # 修改为你想要发送的消息
+        message = "你好，这是每隔2小时发送的消息！"
+        
+        # 修改为你想要发送消息的聊天ID（可以在机器人和聊天中使用 /chatid 命令获取）
+        chat_id = "YourChatID"
+        
+        # 发送消息
+        bot.send_message(chat_id=chat_id, text=message)
+
+def start(update: Update, context: CallbackContext) -> None:
+    update.message.reply_text('你的机器人已启动，将在每隔2小时发送消息！')
+
+def main() -> None:
+    updater = Updater(TOKEN)
+
+    # 以2小时为间隔发送消息
+    updater.job_queue.run_repeating(send_periodic_message, interval=2 * 60 * 60, first=0)
+
+    # 注册/start命令
+    updater.dispatcher.add_handler(CommandHandler("start", start))
+
+    # 启动机器人
+    updater.start_polling()
+
+    # 持续运行
+    updater.idle()
+
+if __name__ == '__main__':
+    main()
