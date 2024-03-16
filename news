@@ -24,6 +24,9 @@ https://stack.chaitin.com/tool/detail/97    --CVE-2022-22963 --CVE-2022-22947   
 https://github.com/BlackINT3/OpenArk/   --应急工具
 
 
+文件上传绕过思路：
+https://www.ddosi.org/file-upload-bypass/
+
 
 https://github.com/liamg/traitor   --linux 提权
 https://github.com/WKL-Sec/HiddenDesktop    -- Windows隐藏
