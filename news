@@ -17,6 +17,12 @@ https://wiki.96.mk/Web%E5%AE%89%E5%85%A8/Phpweb/Phpweb%20%E5%89%8D%E5%8F%B0getsh
 https://github.com/Yeuoly/0xUBypass   
 https://www.ddosi.org/one-fox-v5/
 https://github.com/b1-team/superman
+https://github.com/AabyssZG/SpringBoot-Scan
+https://cn-sec.com/archives/1156177.html   --CVE-2022-22947  header="X-Application-Context" && country="CN" && is_domain=true
+https://github.com/savior-only/Spring_All_Reachable
+https://stack.chaitin.com/tool/detail/97    --CVE-2022-22963 --CVE-2022-22947    fofa:app="vmware-SpringBoot-Framework" && country="CN" && host="cn" 
+https://github.com/BlackINT3/OpenArk/   --应急工具
+
 
 
 https://github.com/liamg/traitor   --linux 提权
