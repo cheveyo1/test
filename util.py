@@ -22,6 +22,13 @@ import hashlib
 import optparse
 import pyautogui
 
+卡巴卸载：
+sudo /Library/Application\ Support/Kaspersky\ Lab/klnagent/Binaries/UninstallScript
+sudo /Library/Application\ Support/Kaspersky\ Lab/KAV/Binaries/UninstallScript
+sudo rm -rf /Library/Application\ Support/Kaspersky\ Lab/ /Applications/Kaspersky
+登录名  :  Cheveyo
+  :  esMjSH7YS27s
+
 background_path = 'background.png'
 slider_path = 'slider.png'
 offset=-8
