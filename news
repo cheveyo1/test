@@ -1,4 +1,5 @@
 ngrok config add-authtoken 2eWvRxll3u2mUA2eK5XhrKHeIWn_4fz7StZCtXPrdJ6qnAh2U
+ngrok config add-authtoken 2eWyFLT4oZEbuVwxwkszPIaR7uM_2BNy6EvMcjn1B5RdcHBiR
 https://beneri.se/uploads/
 http://2.58.56.232/wso.php
 http://213.171.5.202/wso.php   admin
